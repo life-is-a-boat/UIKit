@@ -7,7 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UICircleViewHeader.h"
 
 @interface UICoronaView : UIView
+
+-(id)initWithFrame:(CGRect)frame withStyle:(UIMutiColorStyle)style;
+
+-(void)setCoronaMuti_colors:(NSArray *)muti_colors;
+
+-(void)setCoronaMuti_colorsLocations:(NSArray *)locations;
+
+-(void)setStyle:(UIMutiColorStyle)style;
 
 @end

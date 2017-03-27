@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		BE0402EA1E88F9C1008FB728 /* UICoronaView.h in Headers */ = {isa = PBXBuildFile; fileRef = BE0402E81E88F9C1008FB728 /* UICoronaView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BE0402EB1E88F9C1008FB728 /* UICoronaView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0402E91E88F9C1008FB728 /* UICoronaView.m */; };
+		BE0402F21E89020D008FB728 /* UIColor+HexColor.h in Headers */ = {isa = PBXBuildFile; fileRef = BE0402F01E89020D008FB728 /* UIColor+HexColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE0402F31E89020D008FB728 /* UIColor+HexColor.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0402F11E89020D008FB728 /* UIColor+HexColor.m */; };
+		BE0402F61E890464008FB728 /* UIMulti-colorView.h in Headers */ = {isa = PBXBuildFile; fileRef = BE0402F41E890464008FB728 /* UIMulti-colorView.h */; };
+		BE0402F71E890464008FB728 /* UIMulti-colorView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0402F51E890464008FB728 /* UIMulti-colorView.m */; };
+		BE0402FA1E890B89008FB728 /* UICircleViewHeader.h in Resources */ = {isa = PBXBuildFile; fileRef = BE0402F91E890B3C008FB728 /* UICircleViewHeader.h */; };
+		BE0402FD1E891987008FB728 /* UIGradientView.h in Headers */ = {isa = PBXBuildFile; fileRef = BE0402FB1E891987008FB728 /* UIGradientView.h */; };
+		BE0402FE1E891987008FB728 /* UIGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0402FC1E891987008FB728 /* UIGradientView.m */; };
 		BE15875E1E88F6BB0072FFB6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE15875D1E88F6BB0072FFB6 /* main.m */; };
 		BE1587611E88F6BB0072FFB6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1587601E88F6BB0072FFB6 /* AppDelegate.m */; };
 		BE1587641E88F6BB0072FFB6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1587631E88F6BB0072FFB6 /* ViewController.m */; };
@@ -79,6 +86,13 @@
 /* Begin PBXFileReference section */
 		BE0402E81E88F9C1008FB728 /* UICoronaView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICoronaView.h; sourceTree = "<group>"; };
 		BE0402E91E88F9C1008FB728 /* UICoronaView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICoronaView.m; sourceTree = "<group>"; };
+		BE0402F01E89020D008FB728 /* UIColor+HexColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexColor.h"; sourceTree = "<group>"; };
+		BE0402F11E89020D008FB728 /* UIColor+HexColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexColor.m"; sourceTree = "<group>"; };
+		BE0402F41E890464008FB728 /* UIMulti-colorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIMulti-colorView.h"; sourceTree = "<group>"; };
+		BE0402F51E890464008FB728 /* UIMulti-colorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIMulti-colorView.m"; sourceTree = "<group>"; };
+		BE0402F91E890B3C008FB728 /* UICircleViewHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UICircleViewHeader.h; sourceTree = "<group>"; };
+		BE0402FB1E891987008FB728 /* UIGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIGradientView.h; sourceTree = "<group>"; };
+		BE0402FC1E891987008FB728 /* UIGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIGradientView.m; sourceTree = "<group>"; };
 		BE1587591E88F6BB0072FFB6 /* UIViewDemo1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIViewDemo1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE15875D1E88F6BB0072FFB6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BE15875F1E88F6BB0072FFB6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -214,8 +228,15 @@
 			isa = PBXGroup;
 			children = (
 				BE1587961E88F6EA0072FFB6 /* UICircleView.h */,
+				BE0402F91E890B3C008FB728 /* UICircleViewHeader.h */,
 				BE0402E81E88F9C1008FB728 /* UICoronaView.h */,
 				BE0402E91E88F9C1008FB728 /* UICoronaView.m */,
+				BE0402FB1E891987008FB728 /* UIGradientView.h */,
+				BE0402FC1E891987008FB728 /* UIGradientView.m */,
+				BE0402F41E890464008FB728 /* UIMulti-colorView.h */,
+				BE0402F51E890464008FB728 /* UIMulti-colorView.m */,
+				BE0402F01E89020D008FB728 /* UIColor+HexColor.h */,
+				BE0402F11E89020D008FB728 /* UIColor+HexColor.m */,
 				BE1587971E88F6EA0072FFB6 /* Info.plist */,
 			);
 			path = UICircleView;
@@ -237,6 +258,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE0402F21E89020D008FB728 /* UIColor+HexColor.h in Headers */,
+				BE0402F61E890464008FB728 /* UIMulti-colorView.h in Headers */,
+				BE0402FD1E891987008FB728 /* UIGradientView.h in Headers */,
 				BE0402EA1E88F9C1008FB728 /* UICoronaView.h in Headers */,
 				BE1587A61E88F6EA0072FFB6 /* UICircleView.h in Headers */,
 			);
@@ -427,6 +451,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE0402FA1E890B89008FB728 /* UICircleViewHeader.h in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,7 +495,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE0402F71E890464008FB728 /* UIMulti-colorView.m in Sources */,
 				BE0402EB1E88F9C1008FB728 /* UICoronaView.m in Sources */,
+				BE0402FE1E891987008FB728 /* UIGradientView.m in Sources */,
+				BE0402F31E89020D008FB728 /* UIColor+HexColor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

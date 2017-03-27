@@ -16,4 +16,5 @@ FOUNDATION_EXPORT const unsigned char UICircleViewVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <UICircleView/PublicHeader.h>
 #import <UICircleView/UICoronaView.h>
+#import <UICircleView/UIColor+HexColor.h>
 
