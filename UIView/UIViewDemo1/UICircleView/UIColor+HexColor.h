@@ -10,5 +10,5 @@
 
 @interface UIColor (HexColor)
 + (UIColor *)getColorWithHexString:(NSString *)hex;
-
++ (UIColor *)randomColor;
 @end

@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import "UICoronaView.h"
 #import "UIColor+HexColor.h"
+#import "UIPieChartView.h"
+#import "UIRotationView.h"
 
 @interface ViewController ()
 
@@ -16,24 +18,30 @@
 
 @implementation ViewController
 
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 
     self.view.backgroundColor = [UIColor getColorWithHexString:@"F8F8F8"];
 
-    UICoronaView *coronaView = [[UICoronaView alloc] init];
-    coronaView.backgroundColor = [UIColor whiteColor];
-    [coronaView setCoronaMuti_colors:@[[UIColor redColor],[UIColor blueColor],[UIColor greenColor]]];
-    [coronaView setCoronaMuti_colorsLocations:@[@0.3,@0.6,@1.0]];
-    [coronaView setStyle:UIMutiColorStyleCircle];
+    UIRotationView *coronaView = [[UIRotationView alloc] initWithFrame:CGRectMake((self.view.bounds.size.width - 200.) / 2., 90, 200, 200)];
+    coronaView.backgroundColor = [UIColor brownColor];
+    
+//    [coronaView setCoronaMuti_colors:@[[UIColor redColor],[UIColor blueColor],[UIColor greenColor]]];
+//    [coronaView setCoronaMuti_colorsLocations:@[@0.3,@0.6,@1.0]];
+//    [coronaView setStyle:UIMutiColorStyleCircle];
     [self.view addSubview:coronaView];
 
-    coronaView.translatesAutoresizingMaskIntoConstraints = false;
-    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:coronaView attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeLeading multiplier:1. constant:0.]];
-    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.view attribute:NSLayoutAttributeTrailing relatedBy:NSLayoutRelationEqual toItem:coronaView attribute:NSLayoutAttributeTrailing multiplier:1. constant:0.]];
-    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:coronaView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeTop multiplier:1. constant:64.]];
-    [coronaView addConstraint:[NSLayoutConstraint constraintWithItem:coronaView attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1. constant:375.]];
+//    coronaView.center = CGPointMake(self.view.center.x, 64. + 180.);
+//    coronaView.bounds = CGRectMake(0, 0, 200, 200);
+
+//    coronaView.translatesAutoresizingMaskIntoConstraints = false;
+//    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:coronaView attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeLeading multiplier:1. constant:0.]];
+//    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.view attribute:NSLayoutAttributeTrailing relatedBy:NSLayoutRelationEqual toItem:coronaView attribute:NSLayoutAttributeTrailing multiplier:1. constant:0.]];
+//    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:coronaView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeTop multiplier:1. constant:64.]];
+//    [coronaView addConstraint:[NSLayoutConstraint constraintWithItem:coronaView attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1. constant:375.]];
 }
 
 

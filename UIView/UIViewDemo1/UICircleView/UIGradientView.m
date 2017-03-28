@@ -8,6 +8,7 @@
 
 #import "UIGradientView.h"
 #import <QuartzCore/QuartzCore.h>
+#import "UIColor+HexColor.h"
 
 @interface UIGradientView ()
 {
@@ -94,7 +95,7 @@
                 shapeLayer.strokeEnd = 0.5f;
                 shapeLayer.strokeStart = 0.5f;
                 shapeLayer.path = path.CGPath;
-                shapeLayer.fillColor = [self randomColor].CGColor;
+                shapeLayer.fillColor = [UIColor randomColor].CGColor;
                 shapeLayer.lineWidth = 2.0f;
                 shapeLayer.strokeColor = [UIColor clearColor].CGColor;
                 [self.layer addSublayer:shapeLayer];
@@ -108,10 +109,4 @@
     }
 }
 
-- (UIColor *)randomColor {
-    return [UIColor colorWithRed:arc4random() % 256 / 256.f
-                           green:arc4random() % 256 / 256.f
-                            blue:arc4random() % 256 / 256.f
-                           alpha:1];
-}
 @end

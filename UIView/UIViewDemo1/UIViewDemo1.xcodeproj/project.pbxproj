@@ -16,6 +16,8 @@
 		BE0402FA1E890B89008FB728 /* UICircleViewHeader.h in Resources */ = {isa = PBXBuildFile; fileRef = BE0402F91E890B3C008FB728 /* UICircleViewHeader.h */; };
 		BE0402FD1E891987008FB728 /* UIGradientView.h in Headers */ = {isa = PBXBuildFile; fileRef = BE0402FB1E891987008FB728 /* UIGradientView.h */; };
 		BE0402FE1E891987008FB728 /* UIGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0402FC1E891987008FB728 /* UIGradientView.m */; };
+		BE04BB021E89FF3E00C0B0E6 /* UIPieChartView.h in Headers */ = {isa = PBXBuildFile; fileRef = BE04BB001E89FF3E00C0B0E6 /* UIPieChartView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE04BB031E89FF3E00C0B0E6 /* UIPieChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE04BB011E89FF3E00C0B0E6 /* UIPieChartView.m */; };
 		BE15875E1E88F6BB0072FFB6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE15875D1E88F6BB0072FFB6 /* main.m */; };
 		BE1587611E88F6BB0072FFB6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1587601E88F6BB0072FFB6 /* AppDelegate.m */; };
 		BE1587641E88F6BB0072FFB6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1587631E88F6BB0072FFB6 /* ViewController.m */; };
@@ -29,6 +31,10 @@
 		BE1587A61E88F6EA0072FFB6 /* UICircleView.h in Headers */ = {isa = PBXBuildFile; fileRef = BE1587961E88F6EA0072FFB6 /* UICircleView.h */; };
 		BE1587A91E88F6EA0072FFB6 /* UICircleView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1587941E88F6EA0072FFB6 /* UICircleView.framework */; };
 		BE1587AA1E88F6EA0072FFB6 /* UICircleView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BE1587941E88F6EA0072FFB6 /* UICircleView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BE87B8351E8A53FC003E5B2B /* UIRotationView.h in Headers */ = {isa = PBXBuildFile; fileRef = BE87B8331E8A53FC003E5B2B /* UIRotationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE87B8361E8A53FC003E5B2B /* UIRotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE87B8341E8A53FC003E5B2B /* UIRotationView.m */; };
+		BE87B8391E8A5D33003E5B2B /* UIOneTapGestrueRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = BE87B8371E8A5D33003E5B2B /* UIOneTapGestrueRecognizer.h */; };
+		BE87B83A1E8A5D33003E5B2B /* UIOneTapGestrueRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = BE87B8381E8A5D33003E5B2B /* UIOneTapGestrueRecognizer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +99,8 @@
 		BE0402F91E890B3C008FB728 /* UICircleViewHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UICircleViewHeader.h; sourceTree = "<group>"; };
 		BE0402FB1E891987008FB728 /* UIGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIGradientView.h; sourceTree = "<group>"; };
 		BE0402FC1E891987008FB728 /* UIGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIGradientView.m; sourceTree = "<group>"; };
+		BE04BB001E89FF3E00C0B0E6 /* UIPieChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPieChartView.h; sourceTree = "<group>"; };
+		BE04BB011E89FF3E00C0B0E6 /* UIPieChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIPieChartView.m; sourceTree = "<group>"; };
 		BE1587591E88F6BB0072FFB6 /* UIViewDemo1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIViewDemo1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE15875D1E88F6BB0072FFB6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BE15875F1E88F6BB0072FFB6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -115,6 +123,10 @@
 		BE15879C1E88F6EA0072FFB6 /* UICircleViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UICircleViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE1587A31E88F6EA0072FFB6 /* UICircleViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UICircleViewTests.m; sourceTree = "<group>"; };
 		BE1587A51E88F6EA0072FFB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE87B8331E8A53FC003E5B2B /* UIRotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIRotationView.h; sourceTree = "<group>"; };
+		BE87B8341E8A53FC003E5B2B /* UIRotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIRotationView.m; sourceTree = "<group>"; };
+		BE87B8371E8A5D33003E5B2B /* UIOneTapGestrueRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIOneTapGestrueRecognizer.h; sourceTree = "<group>"; };
+		BE87B8381E8A5D33003E5B2B /* UIOneTapGestrueRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIOneTapGestrueRecognizer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,6 +241,12 @@
 			children = (
 				BE1587961E88F6EA0072FFB6 /* UICircleView.h */,
 				BE0402F91E890B3C008FB728 /* UICircleViewHeader.h */,
+				BE87B8331E8A53FC003E5B2B /* UIRotationView.h */,
+				BE87B8341E8A53FC003E5B2B /* UIRotationView.m */,
+				BE87B8371E8A5D33003E5B2B /* UIOneTapGestrueRecognizer.h */,
+				BE87B8381E8A5D33003E5B2B /* UIOneTapGestrueRecognizer.m */,
+				BE04BB001E89FF3E00C0B0E6 /* UIPieChartView.h */,
+				BE04BB011E89FF3E00C0B0E6 /* UIPieChartView.m */,
 				BE0402E81E88F9C1008FB728 /* UICoronaView.h */,
 				BE0402E91E88F9C1008FB728 /* UICoronaView.m */,
 				BE0402FB1E891987008FB728 /* UIGradientView.h */,
@@ -258,9 +276,12 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE87B8351E8A53FC003E5B2B /* UIRotationView.h in Headers */,
+				BE04BB021E89FF3E00C0B0E6 /* UIPieChartView.h in Headers */,
 				BE0402F21E89020D008FB728 /* UIColor+HexColor.h in Headers */,
 				BE0402F61E890464008FB728 /* UIMulti-colorView.h in Headers */,
 				BE0402FD1E891987008FB728 /* UIGradientView.h in Headers */,
+				BE87B8391E8A5D33003E5B2B /* UIOneTapGestrueRecognizer.h in Headers */,
 				BE0402EA1E88F9C1008FB728 /* UICoronaView.h in Headers */,
 				BE1587A61E88F6EA0072FFB6 /* UICircleView.h in Headers */,
 			);
@@ -497,8 +518,11 @@
 			files = (
 				BE0402F71E890464008FB728 /* UIMulti-colorView.m in Sources */,
 				BE0402EB1E88F9C1008FB728 /* UICoronaView.m in Sources */,
+				BE87B8361E8A53FC003E5B2B /* UIRotationView.m in Sources */,
 				BE0402FE1E891987008FB728 /* UIGradientView.m in Sources */,
+				BE87B83A1E8A5D33003E5B2B /* UIOneTapGestrueRecognizer.m in Sources */,
 				BE0402F31E89020D008FB728 /* UIColor+HexColor.m in Sources */,
+				BE04BB031E89FF3E00C0B0E6 /* UIPieChartView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

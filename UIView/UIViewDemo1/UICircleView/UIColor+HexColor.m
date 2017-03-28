@@ -7,6 +7,7 @@
 //
 
 #import "UIColor+HexColor.h"
+#import <time.h>
 
 @implementation UIColor (HexColor)
 + (UIColor *)getColorWithHexString:(NSString *)hex
@@ -44,6 +45,20 @@
                            green:((float) g / 255.0f)
                             blue:((float) b / 255.0f)
                            alpha:1.0f];
+}
+
++ (UIColor *)randomColor {
+    return [UIColor colorWithRed:arc4random()%256 / 256.f
+                           green:arc4random()%256 / 256.f
+                            blue:arc4random()%256 / 256.f
+                           alpha:1];
+}
+ int getRandom(int max) {
+     srand((unsigned)time(NULL));
+     int a;
+     a=rand()%max;
+     printf("\n getRandom:%d",a);
+     return a;
 }
 
 @end
