@@ -10,4 +10,6 @@
 
 @interface UIPieChartView : UIView
 
+-(void)setCoronaMuti_colors:(NSArray *)muti_colors;
+-(void)setPieChartViewDatas:(NSArray *)datas;
 @end

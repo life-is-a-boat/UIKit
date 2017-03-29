@@ -35,6 +35,8 @@
 		BE87B8361E8A53FC003E5B2B /* UIRotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE87B8341E8A53FC003E5B2B /* UIRotationView.m */; };
 		BE87B8391E8A5D33003E5B2B /* UIOneTapGestrueRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = BE87B8371E8A5D33003E5B2B /* UIOneTapGestrueRecognizer.h */; };
 		BE87B83A1E8A5D33003E5B2B /* UIOneTapGestrueRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = BE87B8381E8A5D33003E5B2B /* UIOneTapGestrueRecognizer.m */; };
+		BECBC2711E8BCA9E00EAC03B /* UIImage+MaskImage.h in Headers */ = {isa = PBXBuildFile; fileRef = BECBC26F1E8BCA9E00EAC03B /* UIImage+MaskImage.h */; };
+		BECBC2721E8BCA9E00EAC03B /* UIImage+MaskImage.m in Sources */ = {isa = PBXBuildFile; fileRef = BECBC2701E8BCA9E00EAC03B /* UIImage+MaskImage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +129,8 @@
 		BE87B8341E8A53FC003E5B2B /* UIRotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIRotationView.m; sourceTree = "<group>"; };
 		BE87B8371E8A5D33003E5B2B /* UIOneTapGestrueRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIOneTapGestrueRecognizer.h; sourceTree = "<group>"; };
 		BE87B8381E8A5D33003E5B2B /* UIOneTapGestrueRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIOneTapGestrueRecognizer.m; sourceTree = "<group>"; };
+		BECBC26F1E8BCA9E00EAC03B /* UIImage+MaskImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MaskImage.h"; sourceTree = "<group>"; };
+		BECBC2701E8BCA9E00EAC03B /* UIImage+MaskImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MaskImage.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,6 +251,8 @@
 				BE87B8381E8A5D33003E5B2B /* UIOneTapGestrueRecognizer.m */,
 				BE04BB001E89FF3E00C0B0E6 /* UIPieChartView.h */,
 				BE04BB011E89FF3E00C0B0E6 /* UIPieChartView.m */,
+				BECBC26F1E8BCA9E00EAC03B /* UIImage+MaskImage.h */,
+				BECBC2701E8BCA9E00EAC03B /* UIImage+MaskImage.m */,
 				BE0402E81E88F9C1008FB728 /* UICoronaView.h */,
 				BE0402E91E88F9C1008FB728 /* UICoronaView.m */,
 				BE0402FB1E891987008FB728 /* UIGradientView.h */,
@@ -279,6 +285,7 @@
 				BE87B8351E8A53FC003E5B2B /* UIRotationView.h in Headers */,
 				BE04BB021E89FF3E00C0B0E6 /* UIPieChartView.h in Headers */,
 				BE0402F21E89020D008FB728 /* UIColor+HexColor.h in Headers */,
+				BECBC2711E8BCA9E00EAC03B /* UIImage+MaskImage.h in Headers */,
 				BE0402F61E890464008FB728 /* UIMulti-colorView.h in Headers */,
 				BE0402FD1E891987008FB728 /* UIGradientView.h in Headers */,
 				BE87B8391E8A5D33003E5B2B /* UIOneTapGestrueRecognizer.h in Headers */,
@@ -517,6 +524,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE0402F71E890464008FB728 /* UIMulti-colorView.m in Sources */,
+				BECBC2721E8BCA9E00EAC03B /* UIImage+MaskImage.m in Sources */,
 				BE0402EB1E88F9C1008FB728 /* UICoronaView.m in Sources */,
 				BE87B8361E8A53FC003E5B2B /* UIRotationView.m in Sources */,
 				BE0402FE1E891987008FB728 /* UIGradientView.m in Sources */,

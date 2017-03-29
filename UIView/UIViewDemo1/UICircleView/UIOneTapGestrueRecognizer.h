@@ -9,14 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface UIOneTapGestrueRecognizer : UIGestureRecognizer
-//需要几根手指
-@property(nonatomic, assign)NSUInteger wpNumberOfTouchesRequired;//默认1
-//需要几次点击
-@property(nonatomic, assign)NSUInteger wpNumberOfTapsRequired;//默认0
-//哪一边
-@property (readwrite, nonatomic, assign) UIRectEdge wpEdges;//默认UIRectEdgeAll
-
+//状态
+//@property(nonatomic) UIGestureRecognizerState state;
 //旋转角度
-@property (readonly, nonatomic, assign) CGFloat angle;
+@property (nonatomic, assign) CGFloat angle;
 
+//- (instancetype)initWithTarget:(nullable id)target action:(nullable SEL)action; // designated initializer
 @end

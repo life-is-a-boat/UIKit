@@ -26,12 +26,12 @@
 
     self.view.backgroundColor = [UIColor getColorWithHexString:@"F8F8F8"];
 
-    UIRotationView *coronaView = [[UIRotationView alloc] initWithFrame:CGRectMake((self.view.bounds.size.width - 200.) / 2., 90, 200, 200)];
-    coronaView.backgroundColor = [UIColor brownColor];
+    UIPieChartView *coronaView = [[UIPieChartView alloc] initWithFrame:CGRectMake((self.view.bounds.size.width - 200.) / 2., 90, 200, 200)];
+    coronaView.backgroundColor = [UIColor whiteColor];
+
+    [coronaView setCoronaMuti_colors:@[[UIColor magentaColor],[UIColor greenColor],[UIColor purpleColor],[UIColor blueColor]]];
+    [coronaView setPieChartViewDatas:@[@100,@50,@20,@20]];
     
-//    [coronaView setCoronaMuti_colors:@[[UIColor redColor],[UIColor blueColor],[UIColor greenColor]]];
-//    [coronaView setCoronaMuti_colorsLocations:@[@0.3,@0.6,@1.0]];
-//    [coronaView setStyle:UIMutiColorStyleCircle];
     [self.view addSubview:coronaView];
 
 //    coronaView.center = CGPointMake(self.view.center.x, 64. + 180.);

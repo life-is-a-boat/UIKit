@@ -10,6 +10,7 @@
 #import "UIOneTapGestrueRecognizer.h"
 
 @interface UIRotationView ()
+
 @property (nonatomic)UIView     *contentView;
 @end
 @implementation UIRotationView
@@ -39,12 +40,11 @@
 
 -(void)addRotationGesture
 {
-    
-    UIOneTapGestrueRecognizer *rotation = [[UIOneTapGestrueRecognizer alloc] initWithTarget:self action:@selector(rotationGestureAction:)];
+    UIPanGestureRecognizer *rotation = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(rotationGestureAction:)];
     [_contentView addGestureRecognizer:rotation];
 }
 
--(void)rotationGestureAction:(UIGestureRecognizer *)recognizer
+-(void)rotationGestureAction:(UIPanGestureRecognizer *)recognizer
 {
     switch (recognizer.state) {
         case UIGestureRecognizerStatePossible:
@@ -80,13 +80,21 @@
         default:
             break;
     }
+
+    CGPoint point = [recognizer translationInView:recognizer.view];
+    NSLog(@"X:%f;Y:%f",point.x,point.y);
+
+//    recognizer.view.center = CGPointMake(recognizer.view.center.x + point.x, recognizer.view.center.y + point.y);
+//    [recognizer setTranslation:CGPointMake(0, 0) inView:recognizer.view];
+
+//    printf("\n\n\n angle:%lf",recognizer.angle);
+
 //    CGPoint translation = [recognizer translationInView:self];
 //    recognizer.view.center = CGPointMake(recognizer.view.center.x + translation.x,
 //    recognizer.view.center.y + translation.y);
 //    [recognizer setTranslation:CGPointZero inView:self];
-    
-//    recognizer.view.transform = CGAffineTransformRotate(recognizer.view.transform, recognizer.rotation);
-//    recognizer.rotation = 0;
+//    recognizer.view.transform = CGAffineTransformRotate(recognizer.view.transform, recognizer.angle);
+//    recognizer.angle = 0;
 //    printf("\n rotation:%lf  velocity:%lf",recognizer.rotation,recognizer.velocity);
 }
 /*
