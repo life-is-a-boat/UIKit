@@ -7,8 +7,15 @@
 //
 
 #import "AppDelegate.h"
+#import <Bugly/Bugly.h>
+// 引入JPush功能所需头文件
+#import "JPUSHService.h"
+// iOS10注册APNs所需头文件
+#ifdef NSFoundationVersionNumber_iOS_9_x_Max
+#import <UserNotifications/UserNotifications.h>
+#endif
 
-@interface AppDelegate ()
+@interface AppDelegate ()<JPUSHRegisterDelegate>
 
 @end
 
@@ -17,6 +24,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [Bugly startWithAppId:@""];
     return YES;
 }
 

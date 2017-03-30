@@ -14,55 +14,85 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
-  - BTLabel (1.0.1)
+  - BTLabel (1.2.2)
   - Bugly (2.4.7)
   - FMDB (2.6.2):
     - FMDB/standard (= 2.6.2)
   - FMDB/standard (2.6.2)
-  - HMSegmentedControl (1.5.3)
+  - GCPlaceholderTextView (1.0.1)
+  - JCore (1.1.1)
+  - JGProgressHUD (1.3.6)
+  - JPush (3.0.2):
+    - JCore (~> 1.1.1)
   - JSONModel (1.7.0)
+  - LCCoolHUD (1.0.3):
+    - JGProgressHUD (~> 1.3.1)
+    - LCLoadingHUD
+  - LCLoadingHUD (1.0.6)
   - Masonry (1.0.2)
+  - MBProgressHUD (1.0.0)
   - MJExtension (3.0.13)
   - MJRefresh (3.1.12)
+  - Reachability (3.2)
+  - SDAutoLayout (2.1.7)
   - SDCycleScrollView (1.65):
     - SDWebImage (~> 3.7)
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
   - TPKeyboardAvoiding (1.3.1)
+  - VPImageCropper (0.0.4)
+  - XHPopMenu (1.0.10)
   - YYKit (1.0.9):
     - YYKit/no-arc (= 1.0.9)
   - YYKit/no-arc (1.0.9)
 
 DEPENDENCIES:
-  - AFNetworking (= 3.1.0)
-  - BTLabel (= 1.0.1)
-  - Bugly (= 2.4.7)
-  - FMDB (= 2.6.2)
-  - HMSegmentedControl (= 1.5.3)
-  - JSONModel (= 1.7.0)
-  - Masonry (= 1.0.2)
-  - MJExtension (= 3.0.13)
-  - MJRefresh (= 3.1.12)
-  - SDCycleScrollView (= 1.65)
-  - TPKeyboardAvoiding (= 1.3.1)
-  - YYKit (= 1.0.9)
+  - AFNetworking (~> 3.1.0)
+  - BTLabel (~> 1.2.2)
+  - Bugly (~> 2.4.7)
+  - FMDB (~> 2.6.2)
+  - GCPlaceholderTextView (~> 1.0.1)
+  - JPush (~> 3.0.2)
+  - JSONModel (~> 1.7.0)
+  - LCCoolHUD (~> 1.0.3)
+  - Masonry (~> 1.0.2)
+  - MBProgressHUD (~> 1.0.0)
+  - MJExtension (~> 3.0.13)
+  - MJRefresh (~> 3.1.12)
+  - Reachability (~> 3.2)
+  - SDAutoLayout (~> 2.1.7)
+  - SDCycleScrollView (~> 1.65)
+  - TPKeyboardAvoiding (~> 1.3.1)
+  - VPImageCropper (~> 0.0.4)
+  - XHPopMenu (~> 1.0.9)
+  - YYKit (~> 1.0.9)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
-  BTLabel: bce36185efc4a5a4a616b556d452606c15574ac3
+  BTLabel: 48910b57cca9ea70c79cb415b1a5b851b54995b2
   Bugly: 2c256069145f550171907c5cb1c0f84ad291f6c1
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
-  HMSegmentedControl: 7c6145afb50f26cec5f3243082f6f12b9f41318f
+  GCPlaceholderTextView: dec36f63092602c6b5df76e2ce43fa22671b9d12
+  JCore: 2210a789c8efb7dc2a46b1c24d2209b995b18ad2
+  JGProgressHUD: cd599e041ab8363ac5ce83a21a6d95e21d359152
+  JPush: 01a693fafe51b93eafc2e368bbc7a7cc07e12ce4
   JSONModel: 840bc0fcffb24b8454d2c026bf26fea454b8e98d
+  LCCoolHUD: 6346d03a19caff8660fbe426152b8be8623948c7
+  LCLoadingHUD: 8b20d4c10d47c3d4a64978cb966532788c183588
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  SDAutoLayout: e9b36d04b8c0b504762a04d76fbbe5108944297a
   SDCycleScrollView: f72904c77698a7f93a41bcbbc2d78b073bf7326c
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   TPKeyboardAvoiding: 0d6af20e95e2850f4c621841225b59ec7d8dd852
+  VPImageCropper: f4895315460bd05fbb22dbee6b063bdd43f25797
+  XHPopMenu: 330228800079af5492b0158e43d4e7c027001dba
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: a7c392ea730fbb2a0e0d026a38568278be328014
+PODFILE CHECKSUM: 8dd4579226e41187a0617b5fac2fff21feda0da9
 
 COCOAPODS: 1.0.0
