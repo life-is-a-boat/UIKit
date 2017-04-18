@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface UICircleCollectionViewLayout : UICollectionViewLayout
+//这个int值存储有多少个item
+@property(nonatomic,assign)int itemCount;
+
+@property(nonatomic,assign)CGSize  itemSize;
 
 @end

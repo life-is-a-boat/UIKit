@@ -20,6 +20,7 @@ PODS:
     - FMDB/standard (= 2.6.2)
   - FMDB/standard (2.6.2)
   - GCPlaceholderTextView (1.0.1)
+  - HMSegmentedControl (1.5.3)
   - JCore (1.1.1)
   - JGProgressHUD (1.3.6)
   - JPush (3.0.2):
@@ -53,6 +54,7 @@ DEPENDENCIES:
   - Bugly (~> 2.4.7)
   - FMDB (~> 2.6.2)
   - GCPlaceholderTextView (~> 1.0.1)
+  - HMSegmentedControl (~> 1.5.3)
   - JPush (~> 3.0.2)
   - JSONModel (~> 1.7.0)
   - LCCoolHUD (~> 1.0.3)
@@ -74,6 +76,7 @@ SPEC CHECKSUMS:
   Bugly: 2c256069145f550171907c5cb1c0f84ad291f6c1
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   GCPlaceholderTextView: dec36f63092602c6b5df76e2ce43fa22671b9d12
+  HMSegmentedControl: 7c6145afb50f26cec5f3243082f6f12b9f41318f
   JCore: 2210a789c8efb7dc2a46b1c24d2209b995b18ad2
   JGProgressHUD: cd599e041ab8363ac5ce83a21a6d95e21d359152
   JPush: 01a693fafe51b93eafc2e368bbc7a7cc07e12ce4
@@ -93,6 +96,6 @@ SPEC CHECKSUMS:
   XHPopMenu: 330228800079af5492b0158e43d4e7c027001dba
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 8dd4579226e41187a0617b5fac2fff21feda0da9
+PODFILE CHECKSUM: 057d254ac1201816130dcbde0dab02ff5609922b
 
 COCOAPODS: 1.0.0

@@ -24,8 +24,6 @@
 		BE254B1B1E8CE1E00094D4C3 /* DBValidationRule.m in Sources */ = {isa = PBXBuildFile; fileRef = BE254AFC1E8CE1DF0094D4C3 /* DBValidationRule.m */; };
 		BE254B1C1E8CE1E00094D4C3 /* DBValidationStringLengthRule.m in Sources */ = {isa = PBXBuildFile; fileRef = BE254AFE1E8CE1DF0094D4C3 /* DBValidationStringLengthRule.m */; };
 		BE254B1D1E8CE1E00094D4C3 /* NSObject+DBValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = BE254B011E8CE1E00094D4C3 /* NSObject+DBValidator.m */; };
-		BE254B1E1E8CE1E00094D4C3 /* HMSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = BE254B041E8CE1E00094D4C3 /* HMSegmentedControl.m */; };
-		BE254B1F1E8CE1E00094D4C3 /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = BE254B071E8CE1E00094D4C3 /* KeychainItemWrapper.m */; };
 		BE254B201E8CE1E00094D4C3 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE254B0A1E8CE1E00094D4C3 /* libWeChatSDK.a */; };
 		BE254B211E8CE1E00094D4C3 /* read_me.txt in Resources */ = {isa = PBXBuildFile; fileRef = BE254B0B1E8CE1E00094D4C3 /* read_me.txt */; };
 		BE254B271E8CE35D0094D4C3 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BE254B261E8CE35D0094D4C3 /* libstdc++.6.0.9.tbd */; };
@@ -36,6 +34,7 @@
 		BE254B431E8CEC150094D4C3 /* JMC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BE254B3B1E8CEC150094D4C3 /* JMC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BE254B4A1E8CEC820094D4C3 /* JMCBaseViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = BE254B481E8CEC820094D4C3 /* JMCBaseViewController.h */; };
 		BE254B4B1E8CEC820094D4C3 /* JMCBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE254B491E8CEC820094D4C3 /* JMCBaseViewController.m */; };
+		BE3C0BAB1E8E1D2C00CC1098 /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = BE3C0BAA1E8E1D2C00CC1098 /* KeychainItemWrapper.m */; };
 		BEF193C01E8A7352008ADE7D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF193BF1E8A7352008ADE7D /* main.m */; };
 		BEF193C31E8A7352008ADE7D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF193C21E8A7352008ADE7D /* AppDelegate.m */; };
 		BEF193C61E8A7352008ADE7D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF193C51E8A7352008ADE7D /* ViewController.m */; };
@@ -100,10 +99,6 @@
 		BE254AFF1E8CE1DF0094D4C3 /* DBValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBValidator.h; sourceTree = "<group>"; };
 		BE254B001E8CE1E00094D4C3 /* NSObject+DBValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DBValidator.h"; sourceTree = "<group>"; };
 		BE254B011E8CE1E00094D4C3 /* NSObject+DBValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DBValidator.m"; sourceTree = "<group>"; };
-		BE254B031E8CE1E00094D4C3 /* HMSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMSegmentedControl.h; sourceTree = "<group>"; };
-		BE254B041E8CE1E00094D4C3 /* HMSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMSegmentedControl.m; sourceTree = "<group>"; };
-		BE254B061E8CE1E00094D4C3 /* KeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapper.h; sourceTree = "<group>"; };
-		BE254B071E8CE1E00094D4C3 /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
 		BE254B0A1E8CE1E00094D4C3 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
 		BE254B0B1E8CE1E00094D4C3 /* read_me.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = read_me.txt; sourceTree = "<group>"; };
 		BE254B0C1E8CE1E00094D4C3 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
@@ -121,6 +116,8 @@
 		BE254B481E8CEC820094D4C3 /* JMCBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMCBaseViewController.h; sourceTree = "<group>"; };
 		BE254B491E8CEC820094D4C3 /* JMCBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMCBaseViewController.m; sourceTree = "<group>"; };
 		BE254B4C1E8CED980094D4C3 /* Bugly.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bugly.framework; path = Pods/Bugly/Bugly.framework; sourceTree = "<group>"; };
+		BE3C0BA91E8E1D2C00CC1098 /* KeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapper.h; sourceTree = "<group>"; };
+		BE3C0BAA1E8E1D2C00CC1098 /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
 		BE5209C01E8D1BB300940D1A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		BE5209C21E8D1BBB00940D1A /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		BE5209C41E8D1BC400940D1A /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
@@ -180,14 +177,13 @@
 		BE254AE01E8CE1DF0094D4C3 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				BE3C0BA81E8E1D2C00CC1098 /* KeychainItemWrapper */,
 				BE254B2D1E8CE9E70094D4C3 /* JMCKit */,
 				BE254AE11E8CE1DF0094D4C3 /* AsynImageView */,
 				BE254AE41E8CE1DF0094D4C3 /* BaiduMapKit */,
 				BE254AEA1E8CE1DF0094D4C3 /* CAPSPageMenu */,
 				BE254AED1E8CE1DF0094D4C3 /* DBModel */,
 				BE254AF21E8CE1DF0094D4C3 /* DBValidator */,
-				BE254B021E8CE1E00094D4C3 /* HMSegmentedControl */,
-				BE254B051E8CE1E00094D4C3 /* KeychainItemWrapper */,
 				BE254B091E8CE1E00094D4C3 /* WeiXinSDK */,
 			);
 			path = Vendor;
@@ -256,24 +252,6 @@
 			path = DBValidator;
 			sourceTree = "<group>";
 		};
-		BE254B021E8CE1E00094D4C3 /* HMSegmentedControl */ = {
-			isa = PBXGroup;
-			children = (
-				BE254B031E8CE1E00094D4C3 /* HMSegmentedControl.h */,
-				BE254B041E8CE1E00094D4C3 /* HMSegmentedControl.m */,
-			);
-			path = HMSegmentedControl;
-			sourceTree = "<group>";
-		};
-		BE254B051E8CE1E00094D4C3 /* KeychainItemWrapper */ = {
-			isa = PBXGroup;
-			children = (
-				BE254B061E8CE1E00094D4C3 /* KeychainItemWrapper.h */,
-				BE254B071E8CE1E00094D4C3 /* KeychainItemWrapper.m */,
-			);
-			path = KeychainItemWrapper;
-			sourceTree = "<group>";
-		};
 		BE254B091E8CE1E00094D4C3 /* WeiXinSDK */ = {
 			isa = PBXGroup;
 			children = (
@@ -321,6 +299,15 @@
 				BE254B3E1E8CEC150094D4C3 /* Info.plist */,
 			);
 			path = JMC;
+			sourceTree = "<group>";
+		};
+		BE3C0BA81E8E1D2C00CC1098 /* KeychainItemWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				BE3C0BA91E8E1D2C00CC1098 /* KeychainItemWrapper.h */,
+				BE3C0BAA1E8E1D2C00CC1098 /* KeychainItemWrapper.m */,
+			);
+			path = KeychainItemWrapper;
 			sourceTree = "<group>";
 		};
 		BEF193B21E8A7352008ADE7D = {
@@ -461,6 +448,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = VR5MBMQMJ9;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -574,13 +566,12 @@
 				BE254B171E8CE1E00094D4C3 /* DBValidationEmailRule.m in Sources */,
 				BE254B1C1E8CE1E00094D4C3 /* DBValidationStringLengthRule.m in Sources */,
 				BEF193C01E8A7352008ADE7D /* main.m in Sources */,
-				BE254B1E1E8CE1E00094D4C3 /* HMSegmentedControl.m in Sources */,
 				BE254B161E8CE1E00094D4C3 /* JKDBModel.m in Sources */,
 				BE254B1D1E8CE1E00094D4C3 /* NSObject+DBValidator.m in Sources */,
-				BE254B1F1E8CE1E00094D4C3 /* KeychainItemWrapper.m in Sources */,
 				BE254B141E8CE1E00094D4C3 /* CAPSPageMenu.m in Sources */,
 				BE254B341E8CE9E70094D4C3 /* JMCKit.m in Sources */,
 				BE254B351E8CE9E70094D4C3 /* JMCRouter.m in Sources */,
+				BE3C0BAB1E8E1D2C00CC1098 /* KeychainItemWrapper.m in Sources */,
 				BE254B0E1E8CE1E00094D4C3 /* AsynImageView.m in Sources */,
 				BE254B181E8CE1E00094D4C3 /* DBValidationEqualityRule.m in Sources */,
 			);
@@ -767,6 +758,7 @@
 					"$(PROJECT_DIR)/JMCDemo/Vendor/BaiduMapKit",
 				);
 				INFOPLIST_FILE = JMCDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -788,6 +780,7 @@
 					"$(PROJECT_DIR)/JMCDemo/Vendor/BaiduMapKit",
 				);
 				INFOPLIST_FILE = JMCDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

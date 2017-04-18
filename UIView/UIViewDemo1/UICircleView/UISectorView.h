@@ -10,4 +10,10 @@
 
 @interface UISectorView : UIView
 
+@property (nonatomic,assign) CGFloat  radius;
+
+@property (nonatomic,assign) CGFloat  startPercentage;
+@property (nonatomic,assign) CGFloat  endPercentage;
+
+
 @end
