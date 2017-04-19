@@ -16,8 +16,13 @@
 
 #import "UICircleCollectionViewLayout.h"
 
-
 #import "UICircleFlowLayout.h"
+
+#import "UIShapeView.h"
+
+#import "LBProgressView.h"
+
+#import "UIWavesAnimationView.h"
 
 @interface ViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
 
@@ -60,26 +65,39 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 
-    self.view.backgroundColor = [UIColor getColorWithHexString:@"F8F8F8"];
+    self.view.backgroundColor = [UIColor greenColor];//[UIColor getColorWithHexString:@"F8F8F8"];
 
-    UIPieChartView *coronaView = [[UIPieChartView alloc] init];
-    coronaView.backgroundColor = [UIColor brownColor];
-//    coronaView.startPercentage = 0.;
-//    coronaView.endPercentage = 60.;
-//    coronaView.radius = 300.;
-    [coronaView setCoronaMuti_colors:@[[UIColor magentaColor],[UIColor greenColor],[UIColor purpleColor],[UIColor blueColor]]];
-    [coronaView setPieChartViewDatas:@[@100,@50,@20,@20]];
+//    UIPieChartView *coronaView = [[UIPieChartView alloc] init];
+//    coronaView.backgroundColor = [UIColor brownColor];
+////    coronaView.startPercentage = 0.;
+////    coronaView.endPercentage = 60.;
+////    coronaView.radius = 300.;
+//    [coronaView setCoronaMuti_colors:@[[UIColor magentaColor],[UIColor greenColor],[UIColor purpleColor],[UIColor blueColor]]];
+//    [coronaView setPieChartViewDatas:@[@100,@50,@20,@20]];
+//
+//    [self.view addSubview:coronaView];
+//
+////    coronaView.center = CGPointMake(self.view.center.x, 64. + 180.);
+////    coronaView.bounds = CGRectMake(0, 0, 200, 200);
+//
+//    coronaView.translatesAutoresizingMaskIntoConstraints = false;
+//    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:coronaView attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeLeading multiplier:1. constant:20.]];
+//    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.view attribute:NSLayoutAttributeTrailing relatedBy:NSLayoutRelationEqual toItem:coronaView attribute:NSLayoutAttributeTrailing multiplier:1. constant:20.]];
+//    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:coronaView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeTop multiplier:1. constant:64.]];
+//    [coronaView addConstraint:[NSLayoutConstraint constraintWithItem:coronaView attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:coronaView attribute:NSLayoutAttributeWidth multiplier:1. constant:20.]];
 
-    [self.view addSubview:coronaView];
 
-//    coronaView.center = CGPointMake(self.view.center.x, 64. + 180.);
-//    coronaView.bounds = CGRectMake(0, 0, 200, 200);
+//    LBProgressView *proView = [[LBProgressView alloc] initWithFrame:CGRectMake(0, 0, 200, 200) setProgress:0.75 Duration:0.7*5];
+//    proView.center = CGPointMake(self.view.bounds.size.width/2, self.view.bounds.size.height/2);
+//    proView.backgroundColor = [UIColor brownColor];
+//    [self.view addSubview:proView];
 
-    coronaView.translatesAutoresizingMaskIntoConstraints = false;
-    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:coronaView attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeLeading multiplier:1. constant:20.]];
-    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.view attribute:NSLayoutAttributeTrailing relatedBy:NSLayoutRelationEqual toItem:coronaView attribute:NSLayoutAttributeTrailing multiplier:1. constant:20.]];
-    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:coronaView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeTop multiplier:1. constant:64.]];
-    [coronaView addConstraint:[NSLayoutConstraint constraintWithItem:coronaView attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:coronaView attribute:NSLayoutAttributeWidth multiplier:1. constant:20.]];
+    UIWavesAnimationView *proView = [[UIWavesAnimationView alloc] init];
+    proView.center = CGPointMake(self.view.bounds.size.width/2, self.view.bounds.size.height/2);
+    proView.bounds = CGRectMake(0, 0, 200, 200);
+    proView.backgroundColor = [UIColor brownColor];
+    [self.view addSubview:proView];
+    [proView setUp];
 }
 
 

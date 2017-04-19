@@ -20,4 +20,7 @@ FOUNDATION_EXPORT const unsigned char UICircleViewVersionString[];
 #import <UICircleView/UIPieChartView.h>
 #import <UICircleView/UIRotationView.h>
 #import <UICircleView/UISectorView.h>
+#import <UICircleView/UIShapeView.h>
+#import <UICircleView/LBProgressView.h>
+
 
