@@ -1,0 +1,6 @@
+target 'BaiDuMapDemo' do
+
+pod 'BaiduMapKit', '~> 3.0.0' #百度地图SDK
+
+end
+
