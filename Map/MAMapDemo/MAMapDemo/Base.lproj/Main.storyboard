@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="6bZ-VU-TfJ">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="xup-My-CYP"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fqJ-TK-htW" customClass="MAMapView">
+                                <rect key="frame" x="10" y="74" width="355" height="544"/>
+                                <color key="backgroundColor" red="0.71773575605890427" green="0.66232704407557497" blue="0.99705493450164795" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TiY-Gu-d5Y" userLabel="position">
+                                <rect key="frame" x="20" y="542" width="56" height="56"/>
+                                <state key="normal" image="icon_position"/>
+                                <connections>
+                                    <action selector="user_location_action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h3n-T4-ZkE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HuL-kg-5hI" userLabel="car">
+                                <rect key="frame" x="299" y="542" width="56" height="56"/>
+                                <state key="normal" image="icon_car"/>
+                                <connections>
+                                    <action selector="car_location_action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HsU-kF-vbE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MP1-XQ-nEC" userLabel="electric">
+                                <rect key="frame" x="299" y="476" width="56" height="56"/>
+                                <state key="normal" image="icon_geofence"/>
+                                <connections>
+                                    <action selector="electrc_action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zCZ-fW-JCB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.3332363570985023" green="0.70312163301876562" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="6bZ-VU-TfJ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="Lg5-1j-EKl"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fqJ-TK-htW" secondAttribute="bottom" constant="49" id="Nj5-0u-jMh"/>
+                            <constraint firstAttribute="trailing" secondItem="fqJ-TK-htW" secondAttribute="trailing" constant="10" id="PSe-3G-nJ0"/>
+                            <constraint firstItem="fqJ-TK-htW" firstAttribute="top" secondItem="6bZ-VU-TfJ" secondAttribute="bottom" constant="10" id="Pjt-II-TRZ"/>
+                            <constraint firstItem="HuL-kg-5hI" firstAttribute="top" secondItem="MP1-XQ-nEC" secondAttribute="bottom" constant="10" id="Ssq-Zh-JWk"/>
+                            <constraint firstItem="HuL-kg-5hI" firstAttribute="centerX" secondItem="MP1-XQ-nEC" secondAttribute="centerX" id="Ve9-Dk-JPx"/>
+                            <constraint firstItem="fqJ-TK-htW" firstAttribute="bottom" secondItem="TiY-Gu-d5Y" secondAttribute="bottom" constant="20" id="czM-eJ-NUx"/>
+                            <constraint firstItem="TiY-Gu-d5Y" firstAttribute="leading" secondItem="fqJ-TK-htW" secondAttribute="leading" constant="10" id="iUn-gp-g0F"/>
+                            <constraint firstItem="HuL-kg-5hI" firstAttribute="centerY" secondItem="TiY-Gu-d5Y" secondAttribute="centerY" id="kJo-fe-i1J"/>
+                            <constraint firstItem="fqJ-TK-htW" firstAttribute="trailing" secondItem="HuL-kg-5hI" secondAttribute="trailing" constant="10" id="kym-v9-Ssz"/>
+                            <constraint firstAttribute="trailing" secondItem="6bZ-VU-TfJ" secondAttribute="trailing" id="lcY-tQ-Cda"/>
+                            <constraint firstItem="fqJ-TK-htW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="mRo-bB-HnO"/>
+                            <constraint firstItem="6bZ-VU-TfJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="yvG-I4-szn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="fqJ-TK-htW" id="JPt-hx-aa2"/>
+                        <outlet property="searchBar" destination="6bZ-VU-TfJ" id="Hul-ig-6AG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-17" y="-134"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_car" width="56" height="56"/>
+        <image name="icon_geofence" width="56" height="56"/>
+        <image name="icon_position" width="56" height="56"/>
+    </resources>
+</document>
