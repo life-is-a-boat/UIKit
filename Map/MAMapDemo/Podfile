@@ -5,4 +5,7 @@ target 'MAMapDemo' do
 pod 'AMapSearch-NO-IDFA', '~> 5.0.0'
 pod 'AMapLocation-NO-IDFA'
 pod 'AMapNavi-NO-IDFA', '~> 5.0.0'
+
+
+pod 'SDWebImage', '~> 4.0.0'
 end

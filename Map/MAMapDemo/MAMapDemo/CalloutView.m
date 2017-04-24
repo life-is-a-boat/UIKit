@@ -55,8 +55,14 @@
     //导航图标
     _navigation_btn = [UIButton buttonWithType:UIButtonTypeCustom];
     _navigation_btn.contentMode = UIViewContentModeScaleAspectFit;
-    [_navigation_btn setImage:[UIImage imageNamed:@""] forState:UIControlStateNormal];
+    _navigation_btn.backgroundColor = [UIColor greenColor];
+    [_navigation_btn setImage:[UIImage imageNamed:@"btn _ radius_slide"] forState:UIControlStateNormal];
+    [_navigation_btn addTarget:self action:@selector(navgation_antion) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:_navigation_btn];
+}
+-(void)navgation_antion
+{
+    NSLog(@"navgation_antion");
 }
 - (void)setTitle:(NSString *)title
 {
@@ -97,12 +103,13 @@
             width = temp_width;
         }
     }
-    self.bounds = CGRectMake(0., 0., width + 40. + 10., height+10.);
+    self.bounds = CGRectMake(0., 0., width + 40. + 10. + 45., height+10.);
     self.center = CGPointMake(self.center.x, - height / 2.);
     self.portraitView.frame = self.bounds;
     self.titleLabel.frame = CGRectMake(Text_badge, (height - 15. - 13.)/2., (width), 15.);
     self.subtitleLabel.frame = CGRectMake(Text_badge, CGRectGetMaxY(self.titleLabel.frame), width,13.);
     _lineImageView.frame = CGRectMake((CGRectGetMaxX(self.titleLabel.frame)>CGRectGetMaxX(self.subtitleLabel.frame) ? CGRectGetMaxX(self.titleLabel.frame) : CGRectGetMaxX(self.subtitleLabel.frame)) + 5., (height - _lineImageView.image.size.height) / 2., _lineImageView.image.size.width, _lineImageView.image.size.height);
+    _navigation_btn.frame = CGRectMake(CGRectGetMaxX(_lineImageView.frame), 5., 45., height);
 
 }
 

@@ -10,7 +10,77 @@
 	<string>46</string>
 	<key>objects</key>
 	<dict>
-		<key>03B496E1083D3D9402D4E6761EF7F323</key>
+		<key>007FF2B1C6DC5EA45F365150B920BD26</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>libSDWebImage.a</string>
+			<key>path</key>
+			<string>libSDWebImage.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>01E3CB7E3647506FE75FFA485D4D8CA3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>559EA15DB7BC1E57C43446495AEFBDF7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>01E416DC2CFDB54EB91C06C078F34E3C</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>79C43EBA6705504C4AE1C53A721903E0</string>
+				<string>91CACB34AFCF3051FFCC69471F484ED3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>iOS</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>02CF7F1C0A8DAFBBB597E61260B1E887</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>89D00FAD9AB74FB48752D55F311F41D9</string>
+				<string>007FF2B1C6DC5EA45F365150B920BD26</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>02D70D1A4C0C848214F8B8B703982678</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>SDWebImage.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>04B89908736948383909C8A1C992BF9B</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -19,9 +89,9 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>MAPointAnnotation.h</string>
+			<string>MAOverlayPathRenderer.h</string>
 			<key>path</key>
-			<string>MAMapKit.framework/Headers/MAPointAnnotation.h</string>
+			<string>MAMapKit.framework/Headers/MAOverlayPathRenderer.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -38,7 +108,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>06C1A4F7E02E851EC013C0B1DA952E87</key>
+		<key>07B4B5999008A90571B9B7BFB22ACF91</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -47,24 +117,13 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>MAAnnotation.h</string>
+			<string>AMapNaviWalkDataRepresentable.h</string>
 			<key>path</key>
-			<string>MAMapKit.framework/Headers/MAAnnotation.h</string>
+			<string>AMapNaviKit.framework/Headers/AMapNaviWalkDataRepresentable.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>07342769B6C28C5F0498840AFFE7F887</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>path</key>
-			<string>AMapSearchKit.framework</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0C0DAA0454C3F9177ABA666E9D22248B</key>
+		<key>08E14F46753307B4DA001D79BCF59329</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -73,13 +132,20 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>MAPolylineRenderer.h</string>
+			<string>AMapFoundationVersion.h</string>
 			<key>path</key>
-			<string>MAMapKit.framework/Headers/MAPolylineRenderer.h</string>
+			<string>AMapFoundationKit.framework/Headers/AMapFoundationVersion.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>0CA874CF07749FE6DFF99DBDD8D00A5F</key>
+		<key>0A0514860609945B08F52CEABC743ADE</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D63228DDAD0F399439D2100F037B3F78</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0AB64478E23E1E6B9280E3AD84B581B8</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -88,13 +154,57 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>AMapNaviLocation.h</string>
+			<string>MAPolyline.h</string>
 			<key>path</key>
-			<string>AMapNaviKit.framework/Headers/AMapNaviLocation.h</string>
+			<string>MAMapKit.framework/Headers/MAPolyline.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>0D765F6C3ACFA18057213BBA4D562AA8</key>
+		<key>0CFCC2ABED51E115A5A5523E09827F68</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>SDWebImageDecoder.m</string>
+			<key>path</key>
+			<string>SDWebImage/SDWebImageDecoder.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0DE5CBDB867D45081FADC1BCA9F604B6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E5B820AF24AFCF0C90B8B0A525859D92</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>0E58EBA65AC3C12A04E650541DED9D7F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>NSImage+WebCache.m</string>
+			<key>path</key>
+			<string>SDWebImage/NSImage+WebCache.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0EA33FB13F8342DC9B5FB020E4C3C02F</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -103,9 +213,9 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>MAPolygon.h</string>
+			<string>MAUserLocationRepresentation.h</string>
 			<key>path</key>
-			<string>MAMapKit.framework/Headers/MAPolygon.h</string>
+			<string>MAMapKit.framework/Headers/MAUserLocationRepresentation.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -122,7 +232,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>13F62E29E307E3A3E964BA05FE6C26A4</key>
+		<key>10AF656AEAD0CEAA2D17321ADE78E3D5</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -131,24 +241,87 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>MAAnimatedAnnotation.h</string>
+			<string>MATileOverlay.h</string>
 			<key>path</key>
-			<string>MAMapKit.framework/Headers/MAAnimatedAnnotation.h</string>
+			<string>MAMapKit.framework/Headers/MATileOverlay.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>191E7843FB60AEE90A86D804127AB019</key>
+		<key>1268768D75F502BA73E84140936FD4A6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2D8645CFF8B8734A8C702DF78B62FF1B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>134008D4927FE427B86117FE5C9C1F2D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SDWebImage-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1860B626EC412F48643FAF1085E21550</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>MAOfflineItem.h</string>
+			<key>path</key>
+			<string>MAMapKit.framework/Headers/MAOfflineItem.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>18FBC318DCF462BEF1378BB6A1EF9BF9</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>44AFB0BD45E4B166EF97B18DDBD21973</string>
-				<string>2E409048C7458EEC57A8FFBAA327C153</string>
-				<string>2BF58313F547985334F539C5DE87C751</string>
-				<string>BF6D43510A5CCA3FC934AC90706B2E59</string>
-				<string>28CD0BE84A5F50AA919C03FDCFAE532B</string>
-				<string>462E5076C1AA7B75E45FDD57C6940590</string>
-				<string>E21DCF8AB1CD853717702D2D61405879</string>
-				<string>E9706414E0372A91220705ABBF03CF92</string>
+				<string>E2E5AEA4296A9E6C20EC49331A4F3944</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>199155ED85B0E5553BEC3A47A64A6908</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AMapNearbyUploadInfo.h</string>
+			<key>path</key>
+			<string>AMapSearchKit.framework/Headers/AMapNearbyUploadInfo.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1A29E8FBF0CE343DA5934C4F11AD0955</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>97533D4FA078079D8762DC5188096100</string>
+				<string>08E14F46753307B4DA001D79BCF59329</string>
+				<string>A1762FF5181C9C5344FDF0396FBC9CB2</string>
+				<string>8CBD1D1A1C32810AAACE33B58E101D02</string>
+				<string>6EF2E6B9CA561FC23F61434278B16292</string>
+				<string>CA0EC973FCB1F0E2BA0664C9AE956C75</string>
+				<string>1EFD170A79C5B84E3A12B37924D19911</string>
+				<string>7EA82E9D27D936F28DE89849262AA97A</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -159,7 +332,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>1BA8161B472695A3FB24D6826980B7D3</key>
+		<key>1CA621E1C29751A48DAF0372449AF9E7</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -168,13 +341,13 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>MAMultiPoint.h</string>
+			<string>MAGroundOverlayRenderer.h</string>
 			<key>path</key>
-			<string>MAMapKit.framework/Headers/MAMultiPoint.h</string>
+			<string>MAMapKit.framework/Headers/MAGroundOverlayRenderer.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>1EFBC79C3452AD13CC81A31F6B2E02A0</key>
+		<key>1D5FCB3F394AD03A2397393B9C795857</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -183,13 +356,13 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>MAMapView.h</string>
+			<string>AMapNaviRideView.h</string>
 			<key>path</key>
-			<string>MAMapKit.framework/Headers/MAMapView.h</string>
+			<string>AMapNaviKit.framework/Headers/AMapNaviRideView.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>20D30F54F78C3756F83946E9AE38AAF6</key>
+		<key>1EFD170A79C5B84E3A12B37924D19911</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -198,13 +371,13 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>MAGroundOverlay.h</string>
+			<string>AMapUtility.h</string>
 			<key>path</key>
-			<string>MAMapKit.framework/Headers/MAGroundOverlay.h</string>
+			<string>AMapFoundationKit.framework/Headers/AMapUtility.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>2226C2AC35729AFE61513DA8A01CFECB</key>
+		<key>1F8715FACA2FC7595F69990842B6487D</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -213,13 +386,13 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>AMapNaviDriveDataRepresentable.h</string>
+			<string>UIImage+GIF.h</string>
 			<key>path</key>
-			<string>AMapNaviKit.framework/Headers/AMapNaviDriveDataRepresentable.h</string>
+			<string>SDWebImage/UIImage+GIF.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>2279415640A31A19552D31F723709799</key>
+		<key>1F937926D3A0836AD830FF6F325BA3A3</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -228,13 +401,13 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>AMapNaviWalkView.h</string>
+			<string>MATraceManager.h</string>
 			<key>path</key>
-			<string>AMapNaviKit.framework/Headers/AMapNaviWalkView.h</string>
+			<string>MAMapKit.framework/Headers/MATraceManager.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>2355A1648BD722467548BC0F07D2F0CF</key>
+		<key>20B5296A044D4FC4B5E617721115D8F0</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -243,39 +416,122 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>AMapNaviRoutePolylineOption.h</string>
+			<string>MAOfflineCity.h</string>
 			<key>path</key>
-			<string>AMapNaviKit.framework/Headers/AMapNaviRoutePolylineOption.h</string>
+			<string>MAMapKit.framework/Headers/MAOfflineCity.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>2466BE47D0FD91666B14D3EEF29FCBE8</key>
+		<key>225CDFEABE0F03B272490971C14BE79F</key>
 		<dict>
-			<key>children</key>
-			<array>
-				<string>8E0CD9C35A6C16191E6D2FAC97F0555F</string>
-			</array>
+			<key>baseConfigurationReference</key>
+			<string>772BACC8781EEDB2193828F33EB412B0</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
 			<key>isa</key>
-			<string>PBXGroup</string>
+			<string>XCBuildConfiguration</string>
 			<key>name</key>
-			<string>Frameworks</string>
+			<string>Debug</string>
+		</dict>
+		<key>23A27D94DA632154B3FD9BBA4CF45FC3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>558C292A48417984D04A5C88122FBB91</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2466FCAD7B01629FB132554F28D6742B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>UIView+WebCacheOperation.m</string>
+			<key>path</key>
+			<string>SDWebImage/UIView+WebCacheOperation.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>247A83B1F5DAC836FA0536F38E1D9BC4</key>
+		<key>24E48DA8B0DF74AAA33987908CCCBA66</key>
 		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>42AA8CBB815AA24BDC26A7C10E5E0956</string>
-			</array>
+			<key>fileRef</key>
+			<string>37DEFABAC16CE29441A6CB70B3E21C13</string>
 			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
+			<string>PBXBuildFile</string>
 		</dict>
-		<key>266504262F410DD9E0A155C87D175C54</key>
+		<key>2776DC3D419FCC7AC78B230A61F25F67</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>B5107BFA8179D7BF8BA232ED7498B947</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>2790D1CFF0F376C35E62D2425C75689F</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -284,13 +540,27 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>AMapLocationRegionObj.h</string>
+			<string>AMapLocationVersion.h</string>
 			<key>path</key>
-			<string>AMapLocationKit.framework/Headers/AMapLocationRegionObj.h</string>
+			<string>AMapLocationKit.framework/Headers/AMapLocationVersion.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>28CD0BE84A5F50AA919C03FDCFAE532B</key>
+		<key>28B1B42E47576029E2D14EBD6971C1A9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C039303765EC0FBD487D1D4AB2748EB4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>2938796FDC3D31BDC20D1D3DEAAC8AF5</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -299,26 +569,27 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>AMapURLSearchConfig.h</string>
+			<string>SDImageCacheConfig.h</string>
 			<key>path</key>
-			<string>AMapFoundationKit.framework/Headers/AMapURLSearchConfig.h</string>
+			<string>SDWebImage/SDImageCacheConfig.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>2A3C6CCEB359E0277F52DB6FDCCD4577</key>
+		<key>2A7D8EF656193AB3694DC2D239295790</key>
 		<dict>
-			<key>children</key>
-			<array>
-				<string>FF6E6DB1BBDDE06662234A187DB89C82</string>
-			</array>
+			<key>fileRef</key>
+			<string>4F2B3BAF08D1A347F10FAD1CCF809800</string>
 			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
 		</dict>
-		<key>2BF58313F547985334F539C5DE87C751</key>
+		<key>2B207753F18286F337A26C56C1DF9AC8</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -327,9 +598,54 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>AMapServices.h</string>
+			<string>AMapGeoFenceError.h</string>
 			<key>path</key>
-			<string>AMapFoundationKit.framework/Headers/AMapServices.h</string>
+			<string>AMapLocationKit.framework/Headers/AMapGeoFenceError.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2BB9FF156C02B45FD8F2FF9AF7367CC8</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AMapSearchAPI.h</string>
+			<key>path</key>
+			<string>AMapSearchKit.framework/Headers/AMapSearchAPI.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2CCF1BD50CEEA9C7843B458BE4DCA2C7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.plug-in</string>
+			<key>name</key>
+			<string>AMap.bundle</string>
+			<key>path</key>
+			<string>MAMapKit.framework/AMap.bundle</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2D8645CFF8B8734A8C702DF78B62FF1B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>SDWebImageManager.m</string>
+			<key>path</key>
+			<string>SDWebImage/SDWebImageManager.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -347,7 +663,7 @@
 			<key>isa</key>
 			<string>XCConfigurationList</string>
 		</dict>
-		<key>2E409048C7458EEC57A8FFBAA327C153</key>
+		<key>2F4872D273FF34E84B204A7437DD97EF</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -356,9 +672,24 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>AMapFoundationVersion.h</string>
+			<string>MAUserLocation.h</string>
 			<key>path</key>
-			<string>AMapFoundationKit.framework/Headers/AMapFoundationVersion.h</string>
+			<string>MAMapKit.framework/Headers/MAUserLocation.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>305E1FAB54F12C937D5CE1FF1D4A8798</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>UIView+WebCacheOperation.h</string>
+			<key>path</key>
+			<string>SDWebImage/UIView+WebCacheOperation.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -375,149 +706,163 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>32A03AF018734289B90C496423DAB81D</key>
+		<key>31ED425B0265E6371F1952EB427A3358</key>
+		<dict>
+			<key>fileRef</key>
+			<string>92053A166DE2529C39395243BEE3C3BA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3519812A3A6091619B5CDB3EFA63B87B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CACC40605BD6B0E7600A84B98D88A39E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>37DEFABAC16CE29441A6CB70B3E21C13</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
+			<string>sourcecode.c.objc</string>
 			<key>name</key>
-			<string>MAUserLocationRepresentation.h</string>
+			<string>SDWebImageDownloader.m</string>
 			<key>path</key>
-			<string>MAMapKit.framework/Headers/MAUserLocationRepresentation.h</string>
+			<string>SDWebImage/SDWebImageDownloader.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>344E7331990570F437FAA49D5B4403FF</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>MAShape.h</string>
-			<key>path</key>
-			<string>MAMapKit.framework/Headers/MAShape.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>35C0FA4C5947BD6EF4F14AFD6610FE1B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>AMapNaviRideManager.h</string>
-			<key>path</key>
-			<string>AMapNaviKit.framework/Headers/AMapNaviRideManager.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>35EE5D1FC9B4E2C1656E3DE4E221744A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>MAAnnotationMoveAnimation.h</string>
-			<key>path</key>
-			<string>MAMapKit.framework/Headers/MAAnnotationMoveAnimation.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>37C4E3BA4CE261CFB533F84ED5BC8F62</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>AMapNaviDriveView.h</string>
-			<key>path</key>
-			<string>AMapNaviKit.framework/Headers/AMapNaviDriveView.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3C6B0B97F2A4FFAD343958EA1571BF90</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>AMapLocationCommonObj.h</string>
-			<key>path</key>
-			<string>AMapLocationKit.framework/Headers/AMapLocationCommonObj.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3DCAB2B7CDE207B3958B6CB957FCC758</key>
+		<key>37E09C14A6249ECDD9A972DA621C3C84</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>CEC22C73C1608DFA5D5D78BDCB218219</string>
+				<string>DA815638D7D33ED636CABE34151ACAEB</string>
+				<string>83B9A37C5A516AB690D3CA907E0048BF</string>
+				<string>913DDA985CF89BC759BDECBEDACBCE3B</string>
+				<string>0E58EBA65AC3C12A04E650541DED9D7F</string>
+				<string>807E458A70C809B6E669CB17BBD481AB</string>
+				<string>74A7043B53C5615B398678B3FF7DE809</string>
+				<string>2938796FDC3D31BDC20D1D3DEAAC8AF5</string>
+				<string>A354755D5E27CF08F7CAFA6CA08B81FA</string>
+				<string>FA662C1892BFE6A74E3F5F9DA670B652</string>
+				<string>8D33B8D69C73222A2BDB4CF65DF4D51F</string>
+				<string>559EA15DB7BC1E57C43446495AEFBDF7</string>
+				<string>0CFCC2ABED51E115A5A5523E09827F68</string>
+				<string>FDC25F0C25F829A38A9A25671C9E7127</string>
+				<string>37DEFABAC16CE29441A6CB70B3E21C13</string>
+				<string>C039303765EC0FBD487D1D4AB2748EB4</string>
+				<string>AC7578A9F09322EF1A34C1840A720DDE</string>
+				<string>636A5DDFD90643B6B2FA5989A7230136</string>
+				<string>2D8645CFF8B8734A8C702DF78B62FF1B</string>
+				<string>DE0C8440C41BAD94C58FE976EC37492A</string>
+				<string>A7F2EF4913E8884CAADE5C7BA5B9FE04</string>
+				<string>92053A166DE2529C39395243BEE3C3BA</string>
+				<string>FFAAA1E0B81252EA44F567B91A130F5E</string>
+				<string>42DFE8D159CDBE74820A0C8E5FE8DA29</string>
+				<string>1F8715FACA2FC7595F69990842B6487D</string>
+				<string>5B20BA37AE62B78D2CA5F28E24A43A19</string>
+				<string>4F2B3BAF08D1A347F10FAD1CCF809800</string>
+				<string>5EA2EA88B39510D6D4A8D3E0BE975A1A</string>
+				<string>3D8687B0CB36AF6881195C0A09A5F581</string>
+				<string>CACC40605BD6B0E7600A84B98D88A39E</string>
+				<string>E5B820AF24AFCF0C90B8B0A525859D92</string>
+				<string>E632E5D6707A18A3E1B99157CA3B5FAD</string>
+				<string>E0C94ADFD79EC51F4C69154030404031</string>
+				<string>558C292A48417984D04A5C88122FBB91</string>
+				<string>305E1FAB54F12C937D5CE1FF1D4A8798</string>
+				<string>2466FCAD7B01629FB132554F28D6742B</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
-			<string>iOS</string>
+			<string>Core</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>3E8AE1A17E44D7A9CC11E9C1C6A4267F</key>
+		<key>39E23EB2628C070273D061AFED0CE6C2</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>E1FFEC198700D2D9C63FCD271504228E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>3CF3A6D497F399FF35915A70C474A725</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>wrapper.plug-in</string>
+			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>AMap.bundle</string>
+			<string>MAIndoorInfo.h</string>
 			<key>path</key>
-			<string>MAMapKit.framework/AMap.bundle</string>
+			<string>MAMapKit.framework/Headers/MAIndoorInfo.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>40354064FE1BFD27FD0FA50CEF11A4B4</key>
+		<key>3D8687B0CB36AF6881195C0A09A5F581</key>
 		<dict>
-			<key>buildConfigurationList</key>
-			<string>60DC226140D9C7F9E67212C2E8514CDC</string>
-			<key>buildPhases</key>
-			<array>
-				<string>247A83B1F5DAC836FA0536F38E1D9BC4</string>
-				<string>8E021A2D3089C1C5EF29AD79929F309B</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
-			<string>PBXNativeTarget</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>Pods-MAMapDemo</string>
-			<key>productName</key>
-			<string>Pods-MAMapDemo</string>
-			<key>productReference</key>
-			<string>70939794010495E4DA4BCB1774940BDB</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
+			<string>UIImageView+HighlightedWebCache.h</string>
+			<key>path</key>
+			<string>SDWebImage/UIImageView+HighlightedWebCache.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
-		<key>427DE005F79E50DB39CF16914B557011</key>
+		<key>3D882C5E42F5F84CBDC14FE06AFF2933</key>
+		<dict>
+			<key>fileRef</key>
+			<string>40452F3A5DAD6CE38D85DBE50387D4AD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3E49F194D6D8C522410B29D5F4763554</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AMapNearbySearchManager.h</string>
+			<key>path</key>
+			<string>AMapSearchKit.framework/Headers/AMapNearbySearchManager.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3F62308D9F78FE8201573CCFCAEE78DB</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>MAMultiColoredPolylineRenderer.h</string>
+			<key>path</key>
+			<string>MAMapKit.framework/Headers/MAMultiColoredPolylineRenderer.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>402D2414707208325E9D10846DFB2660</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -532,14 +877,27 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>42AA8CBB815AA24BDC26A7C10E5E0956</key>
+		<key>40452F3A5DAD6CE38D85DBE50387D4AD</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>SDWebImage-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>404E97AC3716CD96600BDB6C5FC36F5A</key>
 		<dict>
 			<key>fileRef</key>
-			<string>D63228DDAD0F399439D2100F037B3F78</string>
+			<string>79C43EBA6705504C4AE1C53A721903E0</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>440E33FE40A8421EB515B8B4E3DA52D3</key>
+		<key>425E95298440BD8B8D3544B601A4DB92</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -548,28 +906,28 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>AMapGeoFenceRegionObj.h</string>
+			<string>AMapNaviRideDataRepresentable.h</string>
 			<key>path</key>
-			<string>AMapLocationKit.framework/Headers/AMapGeoFenceRegionObj.h</string>
+			<string>AMapNaviKit.framework/Headers/AMapNaviRideDataRepresentable.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>44AFB0BD45E4B166EF97B18DDBD21973</key>
+		<key>42DFE8D159CDBE74820A0C8E5FE8DA29</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
+			<string>sourcecode.c.objc</string>
 			<key>name</key>
-			<string>AMapFoundationKit.h</string>
+			<string>UIButton+WebCache.m</string>
 			<key>path</key>
-			<string>AMapFoundationKit.framework/Headers/AMapFoundationKit.h</string>
+			<string>SDWebImage/UIButton+WebCache.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>4588CAE5529D3F41BE8BE613530CD489</key>
+		<key>432CB11F928FBB9CE77F0D40806C202E</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -578,28 +936,40 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>MACircleRenderer.h</string>
+			<string>MAMapView.h</string>
 			<key>path</key>
-			<string>MAMapKit.framework/Headers/MACircleRenderer.h</string>
+			<string>MAMapKit.framework/Headers/MAMapView.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>462E5076C1AA7B75E45FDD57C6940590</key>
+		<key>433CD3331B6C3787F473C941B61FC68F</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>children</key>
+			<array>
+				<string>01E416DC2CFDB54EB91C06C078F34E3C</string>
+			</array>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
+			<string>PBXGroup</string>
 			<key>name</key>
-			<string>AMapURLSearchType.h</string>
-			<key>path</key>
-			<string>AMapFoundationKit.framework/Headers/AMapURLSearchType.h</string>
+			<string>Frameworks</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>473F0E74BE864BF1DC50F8A42A505DB0</key>
+		<key>44873F8754AF5892AAA8938C0C9F617C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2938796FDC3D31BDC20D1D3DEAAC8AF5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>468B622C77A60D793E3BBE041E14FBD0</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -608,13 +978,13 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>MATraceLocation.h</string>
+			<string>AMapNaviWalkView.h</string>
 			<key>path</key>
-			<string>MAMapKit.framework/Headers/MATraceLocation.h</string>
+			<string>AMapNaviKit.framework/Headers/AMapNaviWalkView.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>47924676F5B04291A5D3BA0916566765</key>
+		<key>4774A879DED8F1BBD9F4D2902E8198C5</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -623,9 +993,9 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>MAOverlay.h</string>
+			<string>MALineDrawType.h</string>
 			<key>path</key>
-			<string>MAMapKit.framework/Headers/MAOverlay.h</string>
+			<string>MAMapKit.framework/Headers/MALineDrawType.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -707,100 +1077,7 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
-		<key>47EAE2DBB188D4B36E80D7601CF501E0</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>MAGroundOverlayRenderer.h</string>
-			<key>path</key>
-			<string>MAMapKit.framework/Headers/MAGroundOverlayRenderer.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4849DB3DCBC9C2ADEC235F85562109BB</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>AMapNaviDriveManager.h</string>
-			<key>path</key>
-			<string>AMapNaviKit.framework/Headers/AMapNaviDriveManager.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4AF5BD493520D97BA4414687237EC9AC</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>AMapGeoFenceManager.h</string>
-			<key>path</key>
-			<string>AMapLocationKit.framework/Headers/AMapGeoFenceManager.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4D0CF31C19A0FDAE6FAFF95EEAC13A57</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CEC22C73C1608DFA5D5D78BDCB218219</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>4D11683D9ACD34FD72CEC61E6C7CB9D2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>path</key>
-			<string>AMapFoundationKit.framework</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4D66DE8F4170FE6416E46B93708B2397</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>MAOfflineProvince.h</string>
-			<key>path</key>
-			<string>MAMapKit.framework/Headers/MAOfflineProvince.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4DE2D44935D2AC45373A36DA5D0AE72C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.plug-in</string>
-			<key>name</key>
-			<string>AMapNavi.bundle</string>
-			<key>path</key>
-			<string>AMapNaviKit.framework/AMapNavi.bundle</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4E235FF08A82BE5DE05A7E41C3A8B150</key>
+		<key>49CB6AEBB2E7B8DD510A5B5C8FD7F5F9</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -815,210 +1092,155 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>4E3009CE3B454BDAA509D367E05F0691</key>
+		<key>49F5BD33B7168DEB54B2B124D9AD9622</key>
 		<dict>
-			<key>children</key>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AMapNaviCommonObj.h</string>
+			<key>path</key>
+			<string>AMapNaviKit.framework/Headers/AMapNaviCommonObj.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4AC52EC37D3E7C234C29BE67B9B7A1FD</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AMapGeoFenceManager.h</string>
+			<key>path</key>
+			<string>AMapLocationKit.framework/Headers/AMapGeoFenceManager.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4AE2B5382F54E759D47A6A8329F4C818</key>
+		<dict>
+			<key>fileRef</key>
+			<string>305E1FAB54F12C937D5CE1FF1D4A8798</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>4B70748C24766BEBF7A2BFFF5A6C3467</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>MAAnimatedAnnotation.h</string>
+			<key>path</key>
+			<string>MAMapKit.framework/Headers/MAAnimatedAnnotation.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4DE94C8915E321AAFDF162C58B3A7E59</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AMapSearchVersion.h</string>
+			<key>path</key>
+			<string>AMapSearchKit.framework/Headers/AMapSearchVersion.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4ECD2B8DE15EF89428C0E4575B9941CC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E0C94ADFD79EC51F4C69154030404031</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>4F2B3BAF08D1A347F10FAD1CCF809800</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>UIImage+MultiFormat.h</string>
+			<key>path</key>
+			<string>SDWebImage/UIImage+MultiFormat.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>511A4347C10560419720066E6206DF60</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
 			<array>
-				<string>5DAF962CE3BBB4745A83745448AF113F</string>
-				<string>4AF5BD493520D97BA4414687237EC9AC</string>
-				<string>440E33FE40A8421EB515B8B4E3DA52D3</string>
-				<string>3C6B0B97F2A4FFAD343958EA1571BF90</string>
-				<string>F3293575871D3F30938ADB13E0906356</string>
-				<string>BE07C605169F305EB771356F5ED0396F</string>
-				<string>266504262F410DD9E0A155C87D175C54</string>
-				<string>B02A03FBB3CEF389A12978F80292CAE8</string>
-				<string>2A3C6CCEB359E0277F52DB6FDCCD4577</string>
+				<string>A99798B568E717E9EAE8702B1EC7D8F6</string>
+				<string>899E85C73AA68E0C95EC59D63B4B3914</string>
+				<string>DDF1FF9C8DEF088C6563CCADC7E8273F</string>
+				<string>44873F8754AF5892AAA8938C0C9F617C</string>
+				<string>B903694EAC744C197160F85B44F930B0</string>
+				<string>01E3CB7E3647506FE75FFA485D4D8CA3</string>
+				<string>AD3B2B556ACF24D6F97CC7C9A2BBC7C3</string>
+				<string>28B1B42E47576029E2D14EBD6971C1A9</string>
+				<string>EB9C5426FE1863EF663C6BEC2EEBE4E4</string>
+				<string>ADF19DAD9D03DF0734C99342A0E1C3F0</string>
+				<string>FA8D33839B6B70032EF45908BE542F00</string>
+				<string>ADC58009AFE78A445EFB6395386110FA</string>
+				<string>C3468383E8862DCD0A2DB64673A28CC4</string>
+				<string>2A7D8EF656193AB3694DC2D239295790</string>
+				<string>8BFAC7BC48C8D6A4724F8BD33904F32D</string>
+				<string>0DE5CBDB867D45081FADC1BCA9F604B6</string>
+				<string>4ECD2B8DE15EF89428C0E4575B9941CC</string>
+				<string>4AE2B5382F54E759D47A6A8329F4C818</string>
 			</array>
 			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>AMapLocation-NO-IDFA</string>
-			<key>path</key>
-			<string>AMapLocation-NO-IDFA</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4E9CF5E56CC0371B28E3A8729FF8F936</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>MAUserLocation.h</string>
-			<key>path</key>
-			<string>MAMapKit.framework/Headers/MAUserLocation.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>500655D226D8E0C8B38CE1BC9D6E529B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>AMapNearbyUploadInfo.h</string>
-			<key>path</key>
-			<string>AMapSearchKit.framework/Headers/AMapNearbyUploadInfo.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5046D0C5489F3932512EE8508386553E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>4DE2D44935D2AC45373A36DA5D0AE72C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Resources</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>53CFA7E3AE1250DBC8FDAB7F4FC2DD2B</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>13F62E29E307E3A3E964BA05FE6C26A4</string>
-				<string>06C1A4F7E02E851EC013C0B1DA952E87</string>
-				<string>35EE5D1FC9B4E2C1656E3DE4E221744A</string>
-				<string>9A49CD678348D29E26F74737A9260276</string>
-				<string>F249C3292D182511DDF68C806B1D7AA2</string>
-				<string>4588CAE5529D3F41BE8BE613530CD489</string>
-				<string>ED2612F1FA943712AC90308EB9924AD9</string>
-				<string>BF9BDFC5608CF04E53FC50F87C8130EE</string>
-				<string>BC4E6A42CF7BDC82F30B2CB6360387FD</string>
-				<string>D4C10F0DC23C0AF7C7F0CBB14DE93214</string>
-				<string>20D30F54F78C3756F83946E9AE38AAF6</string>
-				<string>47EAE2DBB188D4B36E80D7601CF501E0</string>
-				<string>8BFBB22875B5C8C8284E419ED68B7E34</string>
-				<string>AD77F2BCE0F86A03D42177B76B997C94</string>
-				<string>89764ABD6BCD7AF107ABE9D51D033529</string>
-				<string>6C33CE96BA4F298B5882F84DEE3485D3</string>
-				<string>A0AF37DEEB069E8D3917C2C4BC61BB78</string>
-				<string>EFF2339329CCC1391076A7EE77395F2F</string>
-				<string>1EFBC79C3452AD13CC81A31F6B2E02A0</string>
-				<string>FCCDE63E41C6097ACE2E40CECC75B391</string>
-				<string>1BA8161B472695A3FB24D6826980B7D3</string>
-				<string>D2FEFCBAA6C3330F3B275E0B97FF0A33</string>
-				<string>5DCF1E05F52BCAED9BB308863249D466</string>
-				<string>8864B5A1FD2FB61BA2DA8EF4C1E2556E</string>
-				<string>D4DAD8B92370A37BA14EBBC3EEEEB8FC</string>
-				<string>9823A833E9E85493D5F22A78D0ED041D</string>
-				<string>CF7206ED40815B8EB6B8E25ED5E0287A</string>
-				<string>8EA94A761EAF1B7F241E54B5B8CB674B</string>
-				<string>FE692F544DC621BD44A05B7F3FC8C8A5</string>
-				<string>4D66DE8F4170FE6416E46B93708B2397</string>
-				<string>47924676F5B04291A5D3BA0916566765</string>
-				<string>A14EBD5A7E2017CAFFB7558D8FF978EF</string>
-				<string>9F6B6E05B770CFEC444279A90EB0FA13</string>
-				<string>B498FB6B8265FD774C6AD9D19F2DD77E</string>
-				<string>03B496E1083D3D9402D4E6761EF7F323</string>
-				<string>0D765F6C3ACFA18057213BBA4D562AA8</string>
-				<string>FDC83A3566B0A0F85F6102685B0774D0</string>
-				<string>B1F5CA26A47CE58982BF7AE06E4BF551</string>
-				<string>0C0DAA0454C3F9177ABA666E9D22248B</string>
-				<string>344E7331990570F437FAA49D5B4403FF</string>
-				<string>A3DF9AEC8673CB40E71827281D0D2782</string>
-				<string>D3079D238B3193D7CAA0E157C522141C</string>
-				<string>E0E5FA9BA15F001B6CA016474F75A0DF</string>
-				<string>473F0E74BE864BF1DC50F8A42A505DB0</string>
-				<string>A9E910DA0DA9FC10552A9CBBDD2928A1</string>
-				<string>4E9CF5E56CC0371B28E3A8729FF8F936</string>
-				<string>32A03AF018734289B90C496423DAB81D</string>
-				<string>DDB694A41B009EB689D6C9A7163BBD14</string>
-				<string>A5C1DDD36CE3DDAC818D4F187321A33E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>AMap3DMap-NO-IDFA</string>
-			<key>path</key>
-			<string>AMap3DMap-NO-IDFA</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>58B846AA19E03DCF5A409DC954B390D6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>AMapSearchObj.h</string>
-			<key>path</key>
-			<string>AMapSearchKit.framework/Headers/AMapSearchObj.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5B1A576A779F471E7015B5FAA91EFDFF</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>AMapNaviBaseManager.h</string>
-			<key>path</key>
-			<string>AMapNaviKit.framework/Headers/AMapNaviBaseManager.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5DAF962CE3BBB4745A83745448AF113F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>AMapGeoFenceError.h</string>
-			<key>path</key>
-			<string>AMapLocationKit.framework/Headers/AMapGeoFenceError.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5DCF1E05F52BCAED9BB308863249D466</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>MAMultiTexturePolylineRenderer.h</string>
-			<key>path</key>
-			<string>MAMapKit.framework/Headers/MAMultiTexturePolylineRenderer.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>60DC226140D9C7F9E67212C2E8514CDC</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>F64117C2F3FC67E9520525F5AC4D050A</string>
-				<string>6C422709EE546B7CB89298F8747C9D34</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
 		</dict>
-		<key>66D66A9B3244A2D65CC56E1046728D54</key>
+		<key>558C292A48417984D04A5C88122FBB91</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>UIView+WebCache.m</string>
+			<key>path</key>
+			<string>SDWebImage/UIView+WebCache.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>559EA15DB7BC1E57C43446495AEFBDF7</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1027,13 +1249,58 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>AMapNaviTrafficBarView.h</string>
+			<string>SDWebImageDecoder.h</string>
 			<key>path</key>
-			<string>AMapNaviKit.framework/Headers/AMapNaviTrafficBarView.h</string>
+			<string>SDWebImage/SDWebImageDecoder.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>6C33CE96BA4F298B5882F84DEE3485D3</key>
+		<key>55B65D1BF09558097C2A1289C7B31849</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AMapSearchError.h</string>
+			<key>path</key>
+			<string>AMapSearchKit.framework/Headers/AMapSearchError.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>57F5F30505E47B2D432BC689145DD442</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>MAMapStatus.h</string>
+			<key>path</key>
+			<string>MAMapKit.framework/Headers/MAMapStatus.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5B20BA37AE62B78D2CA5F28E24A43A19</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>UIImage+GIF.m</string>
+			<key>path</key>
+			<string>SDWebImage/UIImage+GIF.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5B2BB2263C1B0BEABFD983326FEF42AC</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1048,98 +1315,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>6C422709EE546B7CB89298F8747C9D34</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>B5107BFA8179D7BF8BA232ED7498B947</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>70939794010495E4DA4BCB1774940BDB</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libPods-MAMapDemo.a</string>
-			<key>path</key>
-			<string>libPods-MAMapDemo.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>75763F48E0D925023E356F7102BA531F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>427DE005F79E50DB39CF16914B557011</string>
-				<string>88EE09B66FF2C7A4AB8855F88D9D0F75</string>
-				<string>500655D226D8E0C8B38CE1BC9D6E529B</string>
-				<string>8519070C9E61166438490AEC8C85D9B7</string>
-				<string>B8A4465D7A435C3DB662904A75A329D5</string>
-				<string>9A2C52F240C4C84C3BD4688DE9227B4E</string>
-				<string>58B846AA19E03DCF5A409DC954B390D6</string>
-				<string>F0320167DD67B24FCF90E43A72491F39</string>
-				<string>D7F1D0CA4BD2C8560A4606B8D45650CF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>AMapSearch-NO-IDFA</string>
-			<key>path</key>
-			<string>AMapSearch-NO-IDFA</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>772BACC8781EEDB2193828F33EB412B0</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-MAMapDemo.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7B4127DD3FEC37A2C0764F4E0E170DE6</key>
+		<key>5BD3F48CEFABC69EFB089A0931175D92</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1148,28 +1324,35 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>AMapNaviVersion.h</string>
+			<string>MACustomCalloutView.h</string>
 			<key>path</key>
-			<string>AMapNaviKit.framework/Headers/AMapNaviVersion.h</string>
+			<string>MAMapKit.framework/Headers/MACustomCalloutView.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>7DB346D0F39D3F0E887471402A8071AB</key>
+		<key>5EA2EA88B39510D6D4A8D3E0BE975A1A</key>
 		<dict>
-			<key>children</key>
-			<array>
-				<string>93A4A3777CF96A4AAC1D13BA6DCCEA73</string>
-				<string>BC3CA7F9E30CC8F7E2DD044DD34432FC</string>
-				<string>BD33BAD1B8927BD4E9FBA9079DAA9FCE</string>
-				<string>DB8FBB5B6B1B7CB10E1BEA9EE55C193D</string>
-				<string>312F41EF5F85E1E9C9F2C5071FB197EE</string>
-			</array>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
-			<string>PBXGroup</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>UIImage+MultiFormat.m</string>
+			<key>path</key>
+			<string>SDWebImage/UIImage+MultiFormat.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>8143458921A13B6587A46A72E5664814</key>
+		<key>5F92880CA8BEDCF7D87F2E6B92DB3003</key>
+		<dict>
+			<key>fileRef</key>
+			<string>AC7578A9F09322EF1A34C1840A720DDE</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>60CF480AE1DB1BC7FC50B99440A5B78B</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1184,7 +1367,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>8519070C9E61166438490AEC8C85D9B7</key>
+		<key>626D3D3FC46BB300E416C38115FBCA5D</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1193,13 +1376,26 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>AMapSearchAPI.h</string>
+			<string>MAMultiPolyline.h</string>
 			<key>path</key>
-			<string>AMapSearchKit.framework/Headers/AMapSearchAPI.h</string>
+			<string>MAMapKit.framework/Headers/MAMultiPolyline.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>8864B5A1FD2FB61BA2DA8EF4C1E2556E</key>
+		<key>6359822231125534F65218FC0CF95745</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>0A0514860609945B08F52CEABC743ADE</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>636A5DDFD90643B6B2FA5989A7230136</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1208,13 +1404,29 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>MAOfflineCity.h</string>
+			<string>SDWebImageManager.h</string>
 			<key>path</key>
-			<string>MAMapKit.framework/Headers/MAOfflineCity.h</string>
+			<string>SDWebImage/SDWebImageManager.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>88EE09B66FF2C7A4AB8855F88D9D0F75</key>
+		<key>63BC8D8224ED261365A5E27F4C52017C</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>37E09C14A6249ECDD9A972DA621C3C84</string>
+				<string>A5E771665C267FFF28F284505E65D9E9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>SDWebImage</string>
+			<key>path</key>
+			<string>SDWebImage</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>64DCB375DE61859EC4A531F8C8E299BF</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1223,13 +1435,53 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>AMapNearbySearchManager.h</string>
+			<string>MAOverlayRenderer.h</string>
 			<key>path</key>
-			<string>AMapSearchKit.framework/Headers/AMapNearbySearchManager.h</string>
+			<string>MAMapKit.framework/Headers/MAOverlayRenderer.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>89764ABD6BCD7AF107ABE9D51D033529</key>
+		<key>67E1B403EDB958BCB242FE21C003BBAA</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>02D70D1A4C0C848214F8B8B703982678</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/SDWebImage/SDWebImage-prefix.pch</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PRIVATE_HEADERS_FOLDER_PATH</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string></string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>6A74D75369097523C9EE7E3CC0274B92</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1238,13 +1490,144 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>MALineDrawType.h</string>
+			<string>MAGroundOverlay.h</string>
 			<key>path</key>
-			<string>MAMapKit.framework/Headers/MALineDrawType.h</string>
+			<string>MAMapKit.framework/Headers/MAGroundOverlay.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>8BFBB22875B5C8C8284E419ED68B7E34</key>
+		<key>6AE43430A8ACD867DA4989781C0A7B7B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AMapNaviDriveView.h</string>
+			<key>path</key>
+			<string>AMapNaviKit.framework/Headers/AMapNaviDriveView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6C60EAF968D5DF32DCDFD85FDF276CD0</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>02D70D1A4C0C848214F8B8B703982678</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/SDWebImage/SDWebImage-prefix.pch</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PRIVATE_HEADERS_FOLDER_PATH</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string></string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>6E201029FB00673539FF8324700ED574</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>MAMultiPoint.h</string>
+			<key>path</key>
+			<string>MAMapKit.framework/Headers/MAMultiPoint.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6EF2E6B9CA561FC23F61434278B16292</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AMapURLSearchConfig.h</string>
+			<key>path</key>
+			<string>AMapFoundationKit.framework/Headers/AMapURLSearchConfig.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>73DA3D67F2B8E7F7F51112E63F2148E1</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7B88318AA1E5756A58B89C8C64D12A4A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Resources</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>73EB8FFA46038A80D808095419DFF53A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>74A7043B53C5615B398678B3FF7DE809</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7455B7A01D8357E3B2CA5D6243F93A74</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>SDWebImage</string>
+			<key>target</key>
+			<string>7B7A9686944AB10B7AD493EA1692D41B</string>
+			<key>targetProxy</key>
+			<string>FF068523A6D15D48EAC9C07D9F5F200F</string>
+		</dict>
+		<key>74A7043B53C5615B398678B3FF7DE809</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>SDImageCache.m</string>
+			<key>path</key>
+			<string>SDWebImage/SDImageCache.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>74FBA7A521FBCCED17949EBE894CBEAB</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1259,20 +1642,252 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>8E021A2D3089C1C5EF29AD79929F309B</key>
+		<key>771D23A98CDE052D3E52B170C34B9706</key>
 		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
+			<key>fileRef</key>
+			<string>5EA2EA88B39510D6D4A8D3E0BE975A1A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>772BACC8781EEDB2193828F33EB412B0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-MAMapDemo.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>789F72D57E39B90F16CF1C09D5B54E51</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>MAOfflineMap.h</string>
+			<key>path</key>
+			<string>MAMapKit.framework/Headers/MAOfflineMap.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>79C43EBA6705504C4AE1C53A721903E0</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>7B7A9686944AB10B7AD493EA1692D41B</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>BB48FEBFB1E9E6D4092C5787A23D8826</string>
+			<key>buildPhases</key>
 			<array>
-				<string>4D0CF31C19A0FDAE6FAFF95EEAC13A57</string>
+				<string>C308BEDCAAD226DBCFE8B0A4A3E2C161</string>
+				<string>8A3B5CA245B7D428E05F30ADB121A47A</string>
+				<string>511A4347C10560419720066E6206DF60</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>SDWebImage</string>
+			<key>productName</key>
+			<string>SDWebImage</string>
+			<key>productReference</key>
+			<string>007FF2B1C6DC5EA45F365150B920BD26</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
+		</dict>
+		<key>7B88318AA1E5756A58B89C8C64D12A4A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.plug-in</string>
+			<key>name</key>
+			<string>AMapNavi.bundle</string>
+			<key>path</key>
+			<string>AMapNaviKit.framework/AMapNavi.bundle</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7BF537917566711904054A8FE57D9E3D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AMapNaviBaseManager.h</string>
+			<key>path</key>
+			<string>AMapNaviKit.framework/Headers/AMapNaviBaseManager.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7C714F11A551623F0EF1785005050048</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CDDE2B429AF0D0A725A45D1C6DE3BDEB</string>
 			</array>
 			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
-		<key>8E0CD9C35A6C16191E6D2FAC97F0555F</key>
+		<key>7DB346D0F39D3F0E887471402A8071AB</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>93A4A3777CF96A4AAC1D13BA6DCCEA73</string>
+				<string>433CD3331B6C3787F473C941B61FC68F</string>
+				<string>F40232CA4E6575EC82F775E910E889B8</string>
+				<string>02CF7F1C0A8DAFBBB597E61260B1E887</string>
+				<string>312F41EF5F85E1E9C9F2C5071FB197EE</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7EA82E9D27D936F28DE89849262AA97A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F2E3C775387D3AC600DEA726341FAE66</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7FF31535D3AA80543612318A93DDB08A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AMapNaviVersion.h</string>
+			<key>path</key>
+			<string>AMapNaviKit.framework/Headers/AMapNaviVersion.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>807E458A70C809B6E669CB17BBD481AB</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>SDImageCache.h</string>
+			<key>path</key>
+			<string>SDWebImage/SDImageCache.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>80EDCCAC838348B61889F3250D4C5967</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C061F69CB6FF375A3DBCDD9390A31FB5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>83B9A37C5A516AB690D3CA907E0048BF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>NSData+ImageContentType.m</string>
+			<key>path</key>
+			<string>SDWebImage/NSData+ImageContentType.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8799015821D6326D24CAF865332ADB70</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5B20BA37AE62B78D2CA5F28E24A43A19</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>884A142EEDD3C23CC044AC12FF9FC578</key>
+		<dict>
+			<key>fileRef</key>
+			<string>42DFE8D159CDBE74820A0C8E5FE8DA29</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>899E85C73AA68E0C95EC59D63B4B3914</key>
+		<dict>
+			<key>fileRef</key>
+			<string>913DDA985CF89BC759BDECBEDACBCE3B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>89D00FAD9AB74FB48752D55F311F41D9</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>libPods-MAMapDemo.a</string>
+			<key>path</key>
+			<string>libPods-MAMapDemo.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>8A273C0903E4B7FB65EEB9EECD36B948</key>
 		<dict>
 			<key>isa</key>
 			<string>PBXFileReference</string>
@@ -1283,7 +1898,21 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>8EA94A761EAF1B7F241E54B5B8CB674B</key>
+		<key>8A3B5CA245B7D428E05F30ADB121A47A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>404E97AC3716CD96600BDB6C5FC36F5A</string>
+				<string>9C6CE1369C4B3EC5E7E0FE33B34F7B93</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>8A44DE96341AF5FB9D1640E53F6B97D1</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1292,9 +1921,229 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>MAOfflineItemNationWide.h</string>
+			<string>MAAnnotation.h</string>
 			<key>path</key>
-			<string>MAMapKit.framework/Headers/MAOfflineItemNationWide.h</string>
+			<string>MAMapKit.framework/Headers/MAAnnotation.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8A496EECFC24D38E50C8C3586B5A1CE1</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>8A273C0903E4B7FB65EEB9EECD36B948</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8B1C1D4BC466EA89A1F2BA1C856D60AC</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AMapLocationCommonObj.h</string>
+			<key>path</key>
+			<string>AMapLocationKit.framework/Headers/AMapLocationCommonObj.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8B9C1E5769DC330E9A1EAFEFB8A6A768</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>MAMapVersion.h</string>
+			<key>path</key>
+			<string>MAMapKit.framework/Headers/MAMapVersion.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8BFAC7BC48C8D6A4724F8BD33904F32D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3D8687B0CB36AF6881195C0A09A5F581</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>8CBD1D1A1C32810AAACE33B58E101D02</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AMapURLSearch.h</string>
+			<key>path</key>
+			<string>AMapFoundationKit.framework/Headers/AMapURLSearch.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8CD53CDBD3CA716C37D7C9297F8A408B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>MAPinAnnotationView.h</string>
+			<key>path</key>
+			<string>MAMapKit.framework/Headers/MAPinAnnotationView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8D33B8D69C73222A2BDB4CF65DF4D51F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>SDWebImageCompat.m</string>
+			<key>path</key>
+			<string>SDWebImage/SDWebImageCompat.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8E1B4A045FB718B2C59E8B6E23601E27</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>MAAnnotationMoveAnimation.h</string>
+			<key>path</key>
+			<string>MAMapKit.framework/Headers/MAAnnotationMoveAnimation.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>902ED9BD727EF421CBEDC384E30E4467</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>MATileOverlayRenderer.h</string>
+			<key>path</key>
+			<string>MAMapKit.framework/Headers/MATileOverlayRenderer.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9087C0ACF87F8226AD2FA8BAA9EB1CF6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AMapLocationManager.h</string>
+			<key>path</key>
+			<string>AMapLocationKit.framework/Headers/AMapLocationManager.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>913DDA985CF89BC759BDECBEDACBCE3B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>NSImage+WebCache.h</string>
+			<key>path</key>
+			<string>SDWebImage/NSImage+WebCache.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>91CACB34AFCF3051FFCC69471F484ED3</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>ImageIO.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/ImageIO.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>92053A166DE2529C39395243BEE3C3BA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>SDWebImagePrefetcher.m</string>
+			<key>path</key>
+			<string>SDWebImage/SDWebImagePrefetcher.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>92C61C9278FDD4B9E95D45F2707963E2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>MAOfflineItemCommonCity.h</string>
+			<key>path</key>
+			<string>MAMapKit.framework/Headers/MAOfflineItemCommonCity.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9311E5A9B9817A1C0854A298855D75D3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>MATouchPoi.h</string>
+			<key>path</key>
+			<string>MAMapKit.framework/Headers/MATouchPoi.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1317,7 +2166,7 @@
 			<key>xcLanguageSpecificationIdentifier</key>
 			<string>xcode.lang.ruby</string>
 		</dict>
-		<key>9823A833E9E85493D5F22A78D0ED041D</key>
+		<key>944EE1BB7E5372BC8F5838871E2CE740</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1326,13 +2175,13 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>MAOfflineItemCommonCity.h</string>
+			<string>AMapNaviTrafficBarView.h</string>
 			<key>path</key>
-			<string>MAMapKit.framework/Headers/MAOfflineItemCommonCity.h</string>
+			<string>AMapNaviKit.framework/Headers/AMapNaviTrafficBarView.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>9A2C52F240C4C84C3BD4688DE9227B4E</key>
+		<key>9470BDE4551E9395199851C586B0D00E</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1341,13 +2190,13 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>AMapSearchKit.h</string>
+			<string>MACircleRenderer.h</string>
 			<key>path</key>
-			<string>AMapSearchKit.framework/Headers/AMapSearchKit.h</string>
+			<string>MAMapKit.framework/Headers/MACircleRenderer.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>9A49CD678348D29E26F74737A9260276</key>
+		<key>97533D4FA078079D8762DC5188096100</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1356,92 +2205,24 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>MAAnnotationView.h</string>
+			<string>AMapFoundationKit.h</string>
 			<key>path</key>
-			<string>MAMapKit.framework/Headers/MAAnnotationView.h</string>
+			<string>AMapFoundationKit.framework/Headers/AMapFoundationKit.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>9F6B6E05B770CFEC444279A90EB0FA13</key>
+		<key>9C6CE1369C4B3EC5E7E0FE33B34F7B93</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>fileRef</key>
+			<string>91CACB34AFCF3051FFCC69471F484ED3</string>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>MAOverlayRenderer.h</string>
-			<key>path</key>
-			<string>MAMapKit.framework/Headers/MAOverlayRenderer.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>PBXBuildFile</string>
 		</dict>
-		<key>A08CABE64D70A2B48B2419866325C845</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>AMapNaviCommonObj.h</string>
-			<key>path</key>
-			<string>AMapNaviKit.framework/Headers/AMapNaviCommonObj.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A0AF37DEEB069E8D3917C2C4BC61BB78</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>MAMapStatus.h</string>
-			<key>path</key>
-			<string>MAMapKit.framework/Headers/MAMapStatus.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A14EBD5A7E2017CAFFB7558D8FF978EF</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>MAOverlayPathRenderer.h</string>
-			<key>path</key>
-			<string>MAMapKit.framework/Headers/MAOverlayPathRenderer.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A3DF9AEC8673CB40E71827281D0D2782</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>MATileOverlay.h</string>
-			<key>path</key>
-			<string>MAMapKit.framework/Headers/MATileOverlay.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A5C1DDD36CE3DDAC818D4F187321A33E</key>
+		<key>9E94D76B530AFC7497B340EBA3987DB7</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>3E8AE1A17E44D7A9CC11E9C1C6A4267F</string>
+				<string>2CCF1BD50CEEA9C7843B458BE4DCA2C7</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -1450,18 +2231,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>A97C65BCBFD02915C9D31578A0E91118</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>path</key>
-			<string>MAMapKit.framework</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A9E910DA0DA9FC10552A9CBBDD2928A1</key>
+		<key>A160BADE4E551DC9485048EBB4D55DD1</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1470,11 +2240,94 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>MATraceManager.h</string>
+			<string>MAOfflineItemNationWide.h</string>
 			<key>path</key>
-			<string>MAMapKit.framework/Headers/MATraceManager.h</string>
+			<string>MAMapKit.framework/Headers/MAOfflineItemNationWide.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A1762FF5181C9C5344FDF0396FBC9CB2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AMapServices.h</string>
+			<key>path</key>
+			<string>AMapFoundationKit.framework/Headers/AMapServices.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A354755D5E27CF08F7CAFA6CA08B81FA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>SDImageCacheConfig.m</string>
+			<key>path</key>
+			<string>SDWebImage/SDImageCacheConfig.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A5E771665C267FFF28F284505E65D9E9</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>02D70D1A4C0C848214F8B8B703982678</string>
+				<string>40452F3A5DAD6CE38D85DBE50387D4AD</string>
+				<string>134008D4927FE427B86117FE5C9C1F2D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>../Target Support Files/SDWebImage</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A7F2EF4913E8884CAADE5C7BA5B9FE04</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>SDWebImagePrefetcher.h</string>
+			<key>path</key>
+			<string>SDWebImage/SDWebImagePrefetcher.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A99798B568E717E9EAE8702B1EC7D8F6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DA815638D7D33ED636CABE34151ACAEB</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>A9A6427D0E1874FA1F3FEB61809E3251</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A354755D5E27CF08F7CAFA6CA08B81FA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
 		</dict>
 		<key>AAF678CED40D3499169D10F63CA0719E</key>
 		<dict>
@@ -1547,7 +2400,7 @@
 			<key>name</key>
 			<string>Release</string>
 		</dict>
-		<key>AD77F2BCE0F86A03D42177B76B997C94</key>
+		<key>AB5A78DE254E5995CC5CF85494F57895</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1556,13 +2409,70 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>MAIndoorInfo.h</string>
+			<string>AMapNaviDriveDataRepresentable.h</string>
 			<key>path</key>
-			<string>MAMapKit.framework/Headers/MAIndoorInfo.h</string>
+			<string>AMapNaviKit.framework/Headers/AMapNaviDriveDataRepresentable.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>B02A03FBB3CEF389A12978F80292CAE8</key>
+		<key>AC7578A9F09322EF1A34C1840A720DDE</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>SDWebImageDownloaderOperation.m</string>
+			<key>path</key>
+			<string>SDWebImage/SDWebImageDownloaderOperation.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AD3B2B556ACF24D6F97CC7C9A2BBC7C3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FDC25F0C25F829A38A9A25671C9E7127</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>ADC58009AFE78A445EFB6395386110FA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FFAAA1E0B81252EA44F567B91A130F5E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>ADF19DAD9D03DF0734C99342A0E1C3F0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DE0C8440C41BAD94C58FE976EC37492A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>B0DB08626E6F2299CAF4C4DB052CAFDD</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1571,49 +2481,13 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>AMapLocationVersion.h</string>
+			<string>AMapSearchObj.h</string>
 			<key>path</key>
-			<string>AMapLocationKit.framework/Headers/AMapLocationVersion.h</string>
+			<string>AMapSearchKit.framework/Headers/AMapSearchObj.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>B0A68BA99C5CF2153E034F785600F1A0</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>5B1A576A779F471E7015B5FAA91EFDFF</string>
-				<string>A08CABE64D70A2B48B2419866325C845</string>
-				<string>2226C2AC35729AFE61513DA8A01CFECB</string>
-				<string>4849DB3DCBC9C2ADEC235F85562109BB</string>
-				<string>37C4E3BA4CE261CFB533F84ED5BC8F62</string>
-				<string>C4FC5F170EE30C06937456B3881306F4</string>
-				<string>8143458921A13B6587A46A72E5664814</string>
-				<string>E264934EE087F0BB10149B2ECA8F0C10</string>
-				<string>0CA874CF07749FE6DFF99DBDD8D00A5F</string>
-				<string>FCDBF0C3113FE2FB45CCB930C7428EB6</string>
-				<string>35C0FA4C5947BD6EF4F14AFD6610FE1B</string>
-				<string>CFCA2A40119B812E0D4CDAFB2E7EE45F</string>
-				<string>4E235FF08A82BE5DE05A7E41C3A8B150</string>
-				<string>2355A1648BD722467548BC0F07D2F0CF</string>
-				<string>E4F4F5D2465CBBD2DF53C98020E729DA</string>
-				<string>66D66A9B3244A2D65CC56E1046728D54</string>
-				<string>7B4127DD3FEC37A2C0764F4E0E170DE6</string>
-				<string>E26BE6418B7798793E36E7F9840B6F6B</string>
-				<string>B89335CD942ABFFE15FF3082FA478E9B</string>
-				<string>2279415640A31A19552D31F723709799</string>
-				<string>2466BE47D0FD91666B14D3EEF29FCBE8</string>
-				<string>5046D0C5489F3932512EE8508386553E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>AMapNavi-NO-IDFA</string>
-			<key>path</key>
-			<string>AMapNavi-NO-IDFA</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B1F5CA26A47CE58982BF7AE06E4BF551</key>
+		<key>B241E98285705B2556B6C6985C60A008</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1622,13 +2496,13 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>MAPolyline.h</string>
+			<string>MAPolygon.h</string>
 			<key>path</key>
-			<string>MAMapKit.framework/Headers/MAPolyline.h</string>
+			<string>MAMapKit.framework/Headers/MAPolygon.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>B498FB6B8265FD774C6AD9D19F2DD77E</key>
+		<key>B47783502C37438DDBBEE51BE7BDD241</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1637,9 +2511,9 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>MAPinAnnotationView.h</string>
+			<string>MAPolylineRenderer.h</string>
 			<key>path</key>
-			<string>MAMapKit.framework/Headers/MAPinAnnotationView.h</string>
+			<string>MAMapKit.framework/Headers/MAPolylineRenderer.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1656,7 +2530,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>B89335CD942ABFFE15FF3082FA478E9B</key>
+		<key>B58B8DDA1A724D8B80EC490BA0F5DC50</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1665,146 +2539,63 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>AMapNaviWalkManager.h</string>
+			<string>AMapNaviStatisticsInfo.h</string>
 			<key>path</key>
-			<string>AMapNaviKit.framework/Headers/AMapNaviWalkManager.h</string>
+			<string>AMapNaviKit.framework/Headers/AMapNaviStatisticsInfo.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>B8A4465D7A435C3DB662904A75A329D5</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>AMapSearchError.h</string>
-			<key>path</key>
-			<string>AMapSearchKit.framework/Headers/AMapSearchError.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BC3CA7F9E30CC8F7E2DD044DD34432FC</key>
+		<key>B78FD89BAA84AAFB007978D70FEBADB8</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>3DCAB2B7CDE207B3958B6CB957FCC758</string>
+				<string>7BF537917566711904054A8FE57D9E3D</string>
+				<string>49F5BD33B7168DEB54B2B124D9AD9622</string>
+				<string>AB5A78DE254E5995CC5CF85494F57895</string>
+				<string>BC2F3E39F8B39E66D319B85A972AAC1B</string>
+				<string>6AE43430A8ACD867DA4989781C0A7B7B</string>
+				<string>D91D0483EE6F5F348ADE659282E46835</string>
+				<string>60CF480AE1DB1BC7FC50B99440A5B78B</string>
+				<string>EBD0A567DB55E864FC55749538620346</string>
+				<string>EFDA05ECF70A5ED02CA249276B9C6B6F</string>
+				<string>425E95298440BD8B8D3544B601A4DB92</string>
+				<string>F812EB364864227AD4868F790017B80B</string>
+				<string>1D5FCB3F394AD03A2397393B9C795857</string>
+				<string>49CB6AEBB2E7B8DD510A5B5C8FD7F5F9</string>
+				<string>CE17EAC104B897BB4541A9B1DB1A7B7F</string>
+				<string>B58B8DDA1A724D8B80EC490BA0F5DC50</string>
+				<string>944EE1BB7E5372BC8F5838871E2CE740</string>
+				<string>7FF31535D3AA80543612318A93DDB08A</string>
+				<string>07B4B5999008A90571B9B7BFB22ACF91</string>
+				<string>C735D120A99689CF0ACE64E0AA2120B5</string>
+				<string>468B622C77A60D793E3BBE041E14FBD0</string>
+				<string>8A496EECFC24D38E50C8C3586B5A1CE1</string>
+				<string>73DA3D67F2B8E7F7F51112E63F2148E1</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BC4E6A42CF7BDC82F30B2CB6360387FD</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>MAGeodesicPolyline.h</string>
+			<string>AMapNavi-NO-IDFA</string>
 			<key>path</key>
-			<string>MAMapKit.framework/Headers/MAGeodesicPolyline.h</string>
+			<string>AMapNavi-NO-IDFA</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>BD33BAD1B8927BD4E9FBA9079DAA9FCE</key>
+		<key>B903694EAC744C197160F85B44F930B0</key>
 		<dict>
-			<key>children</key>
-			<array>
-				<string>53CFA7E3AE1250DBC8FDAB7F4FC2DD2B</string>
-				<string>191E7843FB60AEE90A86D804127AB019</string>
-				<string>4E3009CE3B454BDAA509D367E05F0691</string>
-				<string>B0A68BA99C5CF2153E034F785600F1A0</string>
-				<string>75763F48E0D925023E356F7102BA531F</string>
-			</array>
+			<key>fileRef</key>
+			<string>FA662C1892BFE6A74E3F5F9DA670B652</string>
 			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
 		</dict>
-		<key>BE07C605169F305EB771356F5ED0396F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>AMapLocationManager.h</string>
-			<key>path</key>
-			<string>AMapLocationKit.framework/Headers/AMapLocationManager.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BF6D43510A5CCA3FC934AC90706B2E59</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>AMapURLSearch.h</string>
-			<key>path</key>
-			<string>AMapFoundationKit.framework/Headers/AMapURLSearch.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BF9BDFC5608CF04E53FC50F87C8130EE</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>MACustomCalloutView.h</string>
-			<key>path</key>
-			<string>MAMapKit.framework/Headers/MACustomCalloutView.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C4FC5F170EE30C06937456B3881306F4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>AMapNaviHUDView.h</string>
-			<key>path</key>
-			<string>AMapNaviKit.framework/Headers/AMapNaviHUDView.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CEC22C73C1608DFA5D5D78BDCB218219</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>CF7206ED40815B8EB6B8E25ED5E0287A</key>
+		<key>BAC0B6DC7AC42440567303FE35653740</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1819,7 +2610,21 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>CFCA2A40119B812E0D4CDAFB2E7EE45F</key>
+		<key>BB48FEBFB1E9E6D4092C5787A23D8826</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>6C60EAF968D5DF32DCDFD85FDF276CD0</string>
+				<string>67E1B403EDB958BCB242FE21C003BBAA</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>BBE36E58B45C9D117FDD70CEFA534E37</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1828,13 +2633,13 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>AMapNaviRideView.h</string>
+			<string>AMapGeoFenceRegionObj.h</string>
 			<key>path</key>
-			<string>AMapNaviKit.framework/Headers/AMapNaviRideView.h</string>
+			<string>AMapLocationKit.framework/Headers/AMapGeoFenceRegionObj.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>D2FEFCBAA6C3330F3B275E0B97FF0A33</key>
+		<key>BC2F3E39F8B39E66D319B85A972AAC1B</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1843,13 +2648,20 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>MAMultiPolyline.h</string>
+			<string>AMapNaviDriveManager.h</string>
 			<key>path</key>
-			<string>MAMapKit.framework/Headers/MAMultiPolyline.h</string>
+			<string>AMapNaviKit.framework/Headers/AMapNaviDriveManager.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>D3079D238B3193D7CAA0E157C522141C</key>
+		<key>BFCEB2F68C975BEC19ED52F204D0FFD7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E632E5D6707A18A3E1B99157CA3B5FAD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C039303765EC0FBD487D1D4AB2748EB4</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1858,9 +2670,262 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>MATileOverlayRenderer.h</string>
+			<string>SDWebImageDownloaderOperation.h</string>
 			<key>path</key>
-			<string>MAMapKit.framework/Headers/MATileOverlayRenderer.h</string>
+			<string>SDWebImage/SDWebImageDownloaderOperation.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C061F69CB6FF375A3DBCDD9390A31FB5</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>path</key>
+			<string>MAMapKit.framework</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C256463F1091ED87B71413ACD2F75301</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>MAGeometry.h</string>
+			<key>path</key>
+			<string>MAMapKit.framework/Headers/MAGeometry.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C308BEDCAAD226DBCFE8B0A4A3E2C161</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>E6315329C8075549154349915C598DDF</string>
+				<string>C616DD14BC87477E205BF486A258D6D1</string>
+				<string>73EB8FFA46038A80D808095419DFF53A</string>
+				<string>A9A6427D0E1874FA1F3FEB61809E3251</string>
+				<string>3D882C5E42F5F84CBDC14FE06AFF2933</string>
+				<string>F8E65B88564E059FA257193EE42175AD</string>
+				<string>DA1E6D34C711639780A0BEE512D0AF5E</string>
+				<string>24E48DA8B0DF74AAA33987908CCCBA66</string>
+				<string>5F92880CA8BEDCF7D87F2E6B92DB3003</string>
+				<string>1268768D75F502BA73E84140936FD4A6</string>
+				<string>31ED425B0265E6371F1952EB427A3358</string>
+				<string>884A142EEDD3C23CC044AC12FF9FC578</string>
+				<string>8799015821D6326D24CAF865332ADB70</string>
+				<string>771D23A98CDE052D3E52B170C34B9706</string>
+				<string>3519812A3A6091619B5CDB3EFA63B87B</string>
+				<string>BFCEB2F68C975BEC19ED52F204D0FFD7</string>
+				<string>23A27D94DA632154B3FD9BBA4CF45FC3</string>
+				<string>DABF9BF12433475D84CDDA3D6009441D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C3468383E8862DCD0A2DB64673A28CC4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1F8715FACA2FC7595F69990842B6487D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>C5944E09E34EC291474320F9BACECC6B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>MAPolygonRenderer.h</string>
+			<key>path</key>
+			<string>MAMapKit.framework/Headers/MAPolygonRenderer.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C611682478484E89B5552C66862D2BA7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AMapLocationRegionObj.h</string>
+			<key>path</key>
+			<string>AMapLocationKit.framework/Headers/AMapLocationRegionObj.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C616DD14BC87477E205BF486A258D6D1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0E58EBA65AC3C12A04E650541DED9D7F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C735D120A99689CF0ACE64E0AA2120B5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AMapNaviWalkManager.h</string>
+			<key>path</key>
+			<string>AMapNaviKit.framework/Headers/AMapNaviWalkManager.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C9E4B5036459177614C3FF334F450B81</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>MAMultiTexturePolylineRenderer.h</string>
+			<key>path</key>
+			<string>MAMapKit.framework/Headers/MAMultiTexturePolylineRenderer.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CA085B0FEE24CAD8929583C095C08DDD</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>MAGeodesicPolyline.h</string>
+			<key>path</key>
+			<string>MAMapKit.framework/Headers/MAGeodesicPolyline.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CA0EC973FCB1F0E2BA0664C9AE956C75</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AMapURLSearchType.h</string>
+			<key>path</key>
+			<string>AMapFoundationKit.framework/Headers/AMapURLSearchType.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CA96F7306E9DA07BC14F0C68D1636810</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>MAAnnotationView.h</string>
+			<key>path</key>
+			<string>MAMapKit.framework/Headers/MAAnnotationView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CACC40605BD6B0E7600A84B98D88A39E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>UIImageView+HighlightedWebCache.m</string>
+			<key>path</key>
+			<string>SDWebImage/UIImageView+HighlightedWebCache.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CBA8B959B0B64A0BFFEFD7E6FA514D56</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>MAConfig.h</string>
+			<key>path</key>
+			<string>MAMapKit.framework/Headers/MAConfig.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CDDE2B429AF0D0A725A45D1C6DE3BDEB</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>path</key>
+			<string>AMapLocationKit.framework</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CE17EAC104B897BB4541A9B1DB1A7B7F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AMapNaviRoutePolylineOption.h</string>
+			<key>path</key>
+			<string>AMapNaviKit.framework/Headers/AMapNaviRoutePolylineOption.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D1B4706331FB5D77523668203169DEB5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>MAPointAnnotation.h</string>
+			<key>path</key>
+			<string>MAMapKit.framework/Headers/MAPointAnnotation.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1890,7 +2955,7 @@
 			<key>mainGroup</key>
 			<string>7DB346D0F39D3F0E887471402A8071AB</string>
 			<key>productRefGroup</key>
-			<string>DB8FBB5B6B1B7CB10E1BEA9EE55C193D</string>
+			<string>02CF7F1C0A8DAFBBB597E61260B1E887</string>
 			<key>projectDirPath</key>
 			<string></string>
 			<key>projectReferences</key>
@@ -1899,38 +2964,9 @@
 			<string></string>
 			<key>targets</key>
 			<array>
-				<string>40354064FE1BFD27FD0FA50CEF11A4B4</string>
+				<string>FB6BCA855626C470C4485120B97DD113</string>
+				<string>7B7A9686944AB10B7AD493EA1692D41B</string>
 			</array>
-		</dict>
-		<key>D4C10F0DC23C0AF7C7F0CBB14DE93214</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>MAGeometry.h</string>
-			<key>path</key>
-			<string>MAMapKit.framework/Headers/MAGeometry.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D4DAD8B92370A37BA14EBBC3EEEEB8FC</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>MAOfflineItem.h</string>
-			<key>path</key>
-			<string>MAMapKit.framework/Headers/MAOfflineItem.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>D63228DDAD0F399439D2100F037B3F78</key>
 		<dict>
@@ -1945,46 +2981,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>D7F1D0CA4BD2C8560A4606B8D45650CF</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>07342769B6C28C5F0498840AFFE7F887</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DB8FBB5B6B1B7CB10E1BEA9EE55C193D</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>70939794010495E4DA4BCB1774940BDB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DDB694A41B009EB689D6C9A7163BBD14</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>A97C65BCBFD02915C9D31578A0E91118</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E0E5FA9BA15F001B6CA016474F75A0DF</key>
+		<key>D91D0483EE6F5F348ADE659282E46835</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1993,13 +2990,13 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>MATouchPoi.h</string>
+			<string>AMapNaviHUDView.h</string>
 			<key>path</key>
-			<string>MAMapKit.framework/Headers/MATouchPoi.h</string>
+			<string>AMapNaviKit.framework/Headers/AMapNaviHUDView.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>E21DCF8AB1CD853717702D2D61405879</key>
+		<key>D95BD87D62C269F99B0AE4B22863B9E4</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2008,13 +3005,20 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>AMapUtility.h</string>
+			<string>MATraceLocation.h</string>
 			<key>path</key>
-			<string>AMapFoundationKit.framework/Headers/AMapUtility.h</string>
+			<string>MAMapKit.framework/Headers/MATraceLocation.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>E264934EE087F0BB10149B2ECA8F0C10</key>
+		<key>DA1E6D34C711639780A0BEE512D0AF5E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0CFCC2ABED51E115A5A5523E09827F68</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DA815638D7D33ED636CABE34151ACAEB</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2023,11 +3027,69 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>AMapNaviKit.h</string>
+			<string>NSData+ImageContentType.h</string>
 			<key>path</key>
-			<string>AMapNaviKit.framework/Headers/AMapNaviKit.h</string>
+			<string>SDWebImage/NSData+ImageContentType.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DABF9BF12433475D84CDDA3D6009441D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2466FCAD7B01629FB132554F28D6742B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DDF1FF9C8DEF088C6563CCADC7E8273F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>807E458A70C809B6E669CB17BBD481AB</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>DE0C8440C41BAD94C58FE976EC37492A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>SDWebImageOperation.h</string>
+			<key>path</key>
+			<string>SDWebImage/SDWebImageOperation.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E0C94ADFD79EC51F4C69154030404031</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>UIView+WebCache.h</string>
+			<key>path</key>
+			<string>SDWebImage/UIView+WebCache.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E1FFEC198700D2D9C63FCD271504228E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>79C43EBA6705504C4AE1C53A721903E0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
 		</dict>
 		<key>E2667E015E29C6C95E20D90F1BF2A138</key>
 		<dict>
@@ -2050,21 +3112,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>E26BE6418B7798793E36E7F9840B6F6B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>AMapNaviWalkDataRepresentable.h</string>
-			<key>path</key>
-			<string>AMapNaviKit.framework/Headers/AMapNaviWalkDataRepresentable.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>E2AFB0AA57F32BD928FFA4122B9BF90F</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -2078,7 +3125,18 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>E4F4F5D2465CBBD2DF53C98020E729DA</key>
+		<key>E2E5AEA4296A9E6C20EC49331A4F3944</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>path</key>
+			<string>AMapSearchKit.framework</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E35E00DDDA1FEA2888476654925084DC</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2087,26 +3145,140 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>AMapNaviStatisticsInfo.h</string>
+			<string>MAOfflineProvince.h</string>
 			<key>path</key>
-			<string>AMapNaviKit.framework/Headers/AMapNaviStatisticsInfo.h</string>
+			<string>MAMapKit.framework/Headers/MAOfflineProvince.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>E9706414E0372A91220705ABBF03CF92</key>
+		<key>E524B23EBD84626FEAEDD74FDFF3856D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AMapLocationKit.h</string>
+			<key>path</key>
+			<string>AMapLocationKit.framework/Headers/AMapLocationKit.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E5B820AF24AFCF0C90B8B0A525859D92</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>UIImageView+WebCache.h</string>
+			<key>path</key>
+			<string>SDWebImage/UIImageView+WebCache.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E61FEC4A95F1E94B89F368F9694EA301</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>MACircle.h</string>
+			<key>path</key>
+			<string>MAMapKit.framework/Headers/MACircle.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E6315329C8075549154349915C598DDF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>83B9A37C5A516AB690D3CA907E0048BF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E632E5D6707A18A3E1B99157CA3B5FAD</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>UIImageView+WebCache.m</string>
+			<key>path</key>
+			<string>SDWebImage/UIImageView+WebCache.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EB2D6AB64A4F00CE6CC1C8F0640CC41D</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>4D11683D9ACD34FD72CEC61E6C7CB9D2</string>
+				<string>402D2414707208325E9D10846DFB2660</string>
+				<string>3E49F194D6D8C522410B29D5F4763554</string>
+				<string>199155ED85B0E5553BEC3A47A64A6908</string>
+				<string>2BB9FF156C02B45FD8F2FF9AF7367CC8</string>
+				<string>55B65D1BF09558097C2A1289C7B31849</string>
+				<string>F916D48A1E5C9418E229A28A0FB3B6B3</string>
+				<string>B0DB08626E6F2299CAF4C4DB052CAFDD</string>
+				<string>4DE94C8915E321AAFDF162C58B3A7E59</string>
+				<string>18FBC318DCF462BEF1378BB6A1EF9BF9</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
-			<string>Frameworks</string>
+			<string>AMapSearch-NO-IDFA</string>
+			<key>path</key>
+			<string>AMapSearch-NO-IDFA</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>ED2612F1FA943712AC90308EB9924AD9</key>
+		<key>EB3B1399707EE3FD3D9C7EFD8F9A9A2E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>2B207753F18286F337A26C56C1DF9AC8</string>
+				<string>4AC52EC37D3E7C234C29BE67B9B7A1FD</string>
+				<string>BBE36E58B45C9D117FDD70CEFA534E37</string>
+				<string>8B1C1D4BC466EA89A1F2BA1C856D60AC</string>
+				<string>E524B23EBD84626FEAEDD74FDFF3856D</string>
+				<string>9087C0ACF87F8226AD2FA8BAA9EB1CF6</string>
+				<string>C611682478484E89B5552C66862D2BA7</string>
+				<string>2790D1CFF0F376C35E62D2425C75689F</string>
+				<string>7C714F11A551623F0EF1785005050048</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>AMapLocation-NO-IDFA</string>
+			<key>path</key>
+			<string>AMapLocation-NO-IDFA</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EB9C5426FE1863EF663C6BEC2EEBE4E4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>636A5DDFD90643B6B2FA5989A7230136</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>EBD0A567DB55E864FC55749538620346</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2115,13 +3287,13 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>MAConfig.h</string>
+			<string>AMapNaviKit.h</string>
 			<key>path</key>
-			<string>MAMapKit.framework/Headers/MAConfig.h</string>
+			<string>AMapNaviKit.framework/Headers/AMapNaviKit.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>EFF2339329CCC1391076A7EE77395F2F</key>
+		<key>EFDA05ECF70A5ED02CA249276B9C6B6F</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2130,24 +3302,9 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>MAMapVersion.h</string>
+			<string>AMapNaviLocation.h</string>
 			<key>path</key>
-			<string>MAMapKit.framework/Headers/MAMapVersion.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F0320167DD67B24FCF90E43A72491F39</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>AMapSearchVersion.h</string>
-			<key>path</key>
-			<string>AMapSearchKit.framework/Headers/AMapSearchVersion.h</string>
+			<string>AMapNaviKit.framework/Headers/AMapNaviLocation.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -2164,144 +3321,274 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>F249C3292D182511DDF68C806B1D7AA2</key>
+		<key>F24E70C045370B9B52F10338D45B9CF1</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>children</key>
+			<array>
+				<string>4B70748C24766BEBF7A2BFFF5A6C3467</string>
+				<string>8A44DE96341AF5FB9D1640E53F6B97D1</string>
+				<string>8E1B4A045FB718B2C59E8B6E23601E27</string>
+				<string>CA96F7306E9DA07BC14F0C68D1636810</string>
+				<string>E61FEC4A95F1E94B89F368F9694EA301</string>
+				<string>9470BDE4551E9395199851C586B0D00E</string>
+				<string>CBA8B959B0B64A0BFFEFD7E6FA514D56</string>
+				<string>5BD3F48CEFABC69EFB089A0931175D92</string>
+				<string>CA085B0FEE24CAD8929583C095C08DDD</string>
+				<string>C256463F1091ED87B71413ACD2F75301</string>
+				<string>6A74D75369097523C9EE7E3CC0274B92</string>
+				<string>1CA621E1C29751A48DAF0372449AF9E7</string>
+				<string>74FBA7A521FBCCED17949EBE894CBEAB</string>
+				<string>3CF3A6D497F399FF35915A70C474A725</string>
+				<string>4774A879DED8F1BBD9F4D2902E8198C5</string>
+				<string>5B2BB2263C1B0BEABFD983326FEF42AC</string>
+				<string>57F5F30505E47B2D432BC689145DD442</string>
+				<string>8B9C1E5769DC330E9A1EAFEFB8A6A768</string>
+				<string>432CB11F928FBB9CE77F0D40806C202E</string>
+				<string>3F62308D9F78FE8201573CCFCAEE78DB</string>
+				<string>6E201029FB00673539FF8324700ED574</string>
+				<string>626D3D3FC46BB300E416C38115FBCA5D</string>
+				<string>C9E4B5036459177614C3FF334F450B81</string>
+				<string>20B5296A044D4FC4B5E617721115D8F0</string>
+				<string>1860B626EC412F48643FAF1085E21550</string>
+				<string>92C61C9278FDD4B9E95D45F2707963E2</string>
+				<string>BAC0B6DC7AC42440567303FE35653740</string>
+				<string>A160BADE4E551DC9485048EBB4D55DD1</string>
+				<string>789F72D57E39B90F16CF1C09D5B54E51</string>
+				<string>E35E00DDDA1FEA2888476654925084DC</string>
+				<string>FD98A5445991A42A331C51E6A28AF902</string>
+				<string>04B89908736948383909C8A1C992BF9B</string>
+				<string>64DCB375DE61859EC4A531F8C8E299BF</string>
+				<string>8CD53CDBD3CA716C37D7C9297F8A408B</string>
+				<string>D1B4706331FB5D77523668203169DEB5</string>
+				<string>B241E98285705B2556B6C6985C60A008</string>
+				<string>C5944E09E34EC291474320F9BACECC6B</string>
+				<string>0AB64478E23E1E6B9280E3AD84B581B8</string>
+				<string>B47783502C37438DDBBEE51BE7BDD241</string>
+				<string>F9D5CC2E4DECE2AA428F59044F78861C</string>
+				<string>10AF656AEAD0CEAA2D17321ADE78E3D5</string>
+				<string>902ED9BD727EF421CBEDC384E30E4467</string>
+				<string>9311E5A9B9817A1C0854A298855D75D3</string>
+				<string>D95BD87D62C269F99B0AE4B22863B9E4</string>
+				<string>1F937926D3A0836AD830FF6F325BA3A3</string>
+				<string>2F4872D273FF34E84B204A7437DD97EF</string>
+				<string>0EA33FB13F8342DC9B5FB020E4C3C02F</string>
+				<string>80EDCCAC838348B61889F3250D4C5967</string>
+				<string>9E94D76B530AFC7497B340EBA3987DB7</string>
+			</array>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
+			<string>PBXGroup</string>
 			<key>name</key>
-			<string>MACircle.h</string>
+			<string>AMap3DMap-NO-IDFA</string>
 			<key>path</key>
-			<string>MAMapKit.framework/Headers/MACircle.h</string>
+			<string>AMap3DMap-NO-IDFA</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>F3293575871D3F30938ADB13E0906356</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>AMapLocationKit.h</string>
-			<key>path</key>
-			<string>AMapLocationKit.framework/Headers/AMapLocationKit.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F64117C2F3FC67E9520525F5AC4D050A</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>772BACC8781EEDB2193828F33EB412B0</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>FCCDE63E41C6097ACE2E40CECC75B391</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>MAMultiColoredPolylineRenderer.h</string>
-			<key>path</key>
-			<string>MAMapKit.framework/Headers/MAMultiColoredPolylineRenderer.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FCDBF0C3113FE2FB45CCB930C7428EB6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>AMapNaviRideDataRepresentable.h</string>
-			<key>path</key>
-			<string>AMapNaviKit.framework/Headers/AMapNaviRideDataRepresentable.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FDC83A3566B0A0F85F6102685B0774D0</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>MAPolygonRenderer.h</string>
-			<key>path</key>
-			<string>MAMapKit.framework/Headers/MAPolygonRenderer.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FE692F544DC621BD44A05B7F3FC8C8A5</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>MAOfflineMap.h</string>
-			<key>path</key>
-			<string>MAMapKit.framework/Headers/MAOfflineMap.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FF6E6DB1BBDDE06662234A187DB89C82</key>
+		<key>F2E3C775387D3AC600DEA726341FAE66</key>
 		<dict>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>wrapper.framework</string>
 			<key>path</key>
-			<string>AMapLocationKit.framework</string>
+			<string>AMapFoundationKit.framework</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F40232CA4E6575EC82F775E910E889B8</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F24E70C045370B9B52F10338D45B9CF1</string>
+				<string>1A29E8FBF0CE343DA5934C4F11AD0955</string>
+				<string>EB3B1399707EE3FD3D9C7EFD8F9A9A2E</string>
+				<string>B78FD89BAA84AAFB007978D70FEBADB8</string>
+				<string>EB2D6AB64A4F00CE6CC1C8F0640CC41D</string>
+				<string>63BC8D8224ED261365A5E27F4C52017C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F4786DAE02C382E53C00933CA59A3A11</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>225CDFEABE0F03B272490971C14BE79F</string>
+				<string>2776DC3D419FCC7AC78B230A61F25F67</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>F812EB364864227AD4868F790017B80B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AMapNaviRideManager.h</string>
+			<key>path</key>
+			<string>AMapNaviKit.framework/Headers/AMapNaviRideManager.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F8E65B88564E059FA257193EE42175AD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8D33B8D69C73222A2BDB4CF65DF4D51F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F916D48A1E5C9418E229A28A0FB3B6B3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AMapSearchKit.h</string>
+			<key>path</key>
+			<string>AMapSearchKit.framework/Headers/AMapSearchKit.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F9D5CC2E4DECE2AA428F59044F78861C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>MAShape.h</string>
+			<key>path</key>
+			<string>MAMapKit.framework/Headers/MAShape.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FA662C1892BFE6A74E3F5F9DA670B652</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>SDWebImageCompat.h</string>
+			<key>path</key>
+			<string>SDWebImage/SDWebImageCompat.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FA8D33839B6B70032EF45908BE542F00</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A7F2EF4913E8884CAADE5C7BA5B9FE04</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>FB6BCA855626C470C4485120B97DD113</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>F4786DAE02C382E53C00933CA59A3A11</string>
+			<key>buildPhases</key>
+			<array>
+				<string>6359822231125534F65218FC0CF95745</string>
+				<string>39E23EB2628C070273D061AFED0CE6C2</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>7455B7A01D8357E3B2CA5D6243F93A74</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-MAMapDemo</string>
+			<key>productName</key>
+			<string>Pods-MAMapDemo</string>
+			<key>productReference</key>
+			<string>89D00FAD9AB74FB48752D55F311F41D9</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
+		</dict>
+		<key>FD98A5445991A42A331C51E6A28AF902</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>MAOverlay.h</string>
+			<key>path</key>
+			<string>MAMapKit.framework/Headers/MAOverlay.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FDC25F0C25F829A38A9A25671C9E7127</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>SDWebImageDownloader.h</string>
+			<key>path</key>
+			<string>SDWebImage/SDWebImageDownloader.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF068523A6D15D48EAC9C07D9F5F200F</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>7B7A9686944AB10B7AD493EA1692D41B</string>
+			<key>remoteInfo</key>
+			<string>SDWebImage</string>
+		</dict>
+		<key>FFAAA1E0B81252EA44F567B91A130F5E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>UIButton+WebCache.h</string>
+			<key>path</key>
+			<string>SDWebImage/UIButton+WebCache.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>

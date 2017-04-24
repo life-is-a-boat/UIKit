@@ -11,20 +11,58 @@
 #import <AMapFoundationKit/AMapFoundationKit.h>
 #import <AMapLocationKit/AMapLocationKit.h>
 #import "AnnotationView.h"
-@interface ViewController ()<MAMapViewDelegate,AMapGeoFenceManagerDelegate>
 
+#import <SDWebImage/UIImageView+WebCache.h>
+
+@interface ViewController ()<MAMapViewDelegate,AMapGeoFenceManagerDelegate>
+{
+    CLLocationCoordinate2D      _carCoordinate;
+    MACircle                    *_circle;
+}
 @property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
 @property (weak, nonatomic) IBOutlet MAMapView *mapView;
 @property (strong, nonatomic) NSMutableArray    *annotations;
 @property (strong, nonatomic) AMapGeoFenceManager   *geoFenceManager;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *mapView_layoutConstraint;
+@property (weak, nonatomic) IBOutlet UITextField *sliderValue_textField;
+@property (strong, nonatomic) IBOutlet UISlider *slider;
+@property (weak, nonatomic) IBOutlet UIImageView *bgImageView;
 @end
 
 @implementation ViewController
+- (IBAction)slider_action:(id)sender {
+//    printf("\n slider value:%lf",self.slider.value);
+    self.sliderValue_textField.text = [NSString stringWithFormat:@"%.1lf",self.slider.value * 50.];
+
+    MAPointAnnotation *a1 = [[MAPointAnnotation alloc] init];
+    a1.coordinate = _carCoordinate;
+    a1.title = @"车辆位置";
+    [self addAnnotation:a1];
+//    [self.mapView setCenterCoordinate:_carCoordinate animated:true];
+//    [self.mapView setZoomLevel:14.5];
+    _circle.radius = self.slider.value * 50.;
+    //构造圆
+//    MACircle *circle = [MACircle circleWithCenterCoordinate:_carCoordinate radius:self.slider.value * 50.];
+//    //在地图上添加圆
+//    [self addOverlay: circle];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
+//    NSString *image_url = @"http://auditmuat.ftb.faw-vw.com/qmAudiSuper/uploadImg/0734ED34F5A64C7AAAD5C616D37D8BFC.png";//@"http://auditmuat.ftb.faw-vw.com/qmAudiSuper/uploadImg/%7B9W2_AKZTIFHGG65D[IU%60I92017022415512920170424152525.png";//@"http://auditmuat.ftb.faw-vw.com/qmAudiSuper/uploadImg/2016042619304220160426192954.png";//@"http://auditmuat.ftb.faw-vw.com:80/qmAudiSuper/uploadImg/{9W2_AKZTIFHGG65D[IU`I920170224155129.png";
+////    image_url = [image_url stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+//    NSURL *url = [NSURL URLWithString:image_url];
+//    [self.bgImageView sd_setImageWithURL:url completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
+//        //
+//    }];
+
+    self.slider.minimumValue = 0.002;
+    self.slider.maximumValue = 1.;
+    self.sliderValue_textField.layer.masksToBounds = true;
+    self.sliderValue_textField.layer.cornerRadius = 15.;
+    self.sliderValue_textField.text = [NSString stringWithFormat:@"%.1lf",self.slider.value * 50.];
+
     /*
      ///地图类型
      typedef NS_ENUM(NSInteger, MAMapType)
@@ -177,37 +215,94 @@
 //    [self.mapView setCenterCoordinate:coordinate animated:true];
 //    [self.mapView setZoomLevel:14.5];
 
+//    1、初始化地理围栏管理manager
     self.geoFenceManager = [[AMapGeoFenceManager alloc] init];
     self.geoFenceManager.delegate = self;
     self.geoFenceManager.activeAction = AMapGeoFenceActiveActionInside | AMapGeoFenceActiveActionOutside | AMapGeoFenceActiveActionStayed; //设置希望侦测的围栏触发行为，默认是侦测用户进入围栏的行为，即AMapGeoFenceActiveActionInside，这边设置为进入，离开，停留（在围栏内10分钟以上），都触发回调
     self.geoFenceManager.allowsBackgroundLocationUpdates = YES;  //允许后台定位
 }
 - (IBAction)user_location_action:(id)sender {
+//    CLLocationCoordinate2D coordinate = CLLocationCoordinate2DMake(39.908692, 116.397477); //天安门
+//    [self.mapView setCenterCoordinate:coordinate animated:true];
+//    [self.geoFenceManager addAroundPOIRegionForMonitoringWithLocationPoint:coordinate aroundRadius:10000 keyword:@"肯德基" POIType:@"050301" size:20 customID:@"poi_2"];
+
+//    创建自定义圆形围栏
     CLLocationCoordinate2D coordinate = CLLocationCoordinate2DMake(39.908692, 116.397477); //天安门
-    [self.mapView setCenterCoordinate:coordinate animated:true];
-    [self.geoFenceManager addAroundPOIRegionForMonitoringWithLocationPoint:coordinate aroundRadius:10000 keyword:@"肯德基" POIType:@"050301" size:20 customID:@"poi_2"];
+    [self.geoFenceManager addCircleRegionForMonitoringWithCenter:coordinate radius:300 customID:@"circle_1"];
 }
 - (IBAction)car_location_action:(id)sender {
     MAPointAnnotation *a1 = [[MAPointAnnotation alloc] init];
     CLLocationCoordinate2D coordinate = CLLocationCoordinate2DMake(31.1759441828, 121.4654445648);
     a1.coordinate = coordinate;
     a1.title = @"车辆位置";
-    [self.mapView addAnnotation:a1];
+    [self addAnnotation:a1];
     [self.mapView setCenterCoordinate:coordinate animated:true];
     [self.mapView setZoomLevel:14.5];
-
     //构造圆
-    MACircle *circle = [MACircle circleWithCenterCoordinate:coordinate radius:1000];
+    MACircle *circle = [MACircle circleWithCenterCoordinate:coordinate radius:100];
     //在地图上添加圆
-    [_mapView addOverlay: circle];
+    [self addOverlay: circle];
+}
+
+-(void)addAnnotation:(MAPointAnnotation *)pointAnnotation
+{
+    for (MAPointAnnotation *annotation in self.mapView.annotations) {
+        if ([annotation.title isEqualToString:pointAnnotation.title]) {
+            [self.mapView removeAnnotation:annotation];
+            break;
+        }
+    }
+    [self.mapView addAnnotation:pointAnnotation];
+}
+
+-(void)addOverlay:(MACircle *)carCircle
+{
+    for (MACircle *cir in self.mapView.overlays) {
+        if (cir.coordinate.latitude == carCircle.coordinate.latitude  && cir.coordinate.longitude == carCircle.coordinate.longitude ) {
+            [self.mapView removeOverlay:cir];
+        }
+    }
+    [self.mapView addOverlay:carCircle];
+}
+
+- (IBAction)show_action:(id)sender {
+    static BOOL show = NO;
+    show = !show;
+    if (show) {
+        self.mapView_layoutConstraint.constant = 150. + 49.;
+    }
+    else {
+        self.mapView_layoutConstraint.constant = 49.;
+    }
 }
 - (IBAction)electrc_action:(id)sender {
+}
+- (IBAction)add_action:(id)sender {
+    CGFloat level = self.mapView.zoomLevel;
+    level ++;
+    if (level > 19) {
+        self.mapView.zoomLevel = 19.;
+    }
+    else {
+        self.mapView.zoomLevel = level;
+    }
+}
+- (IBAction)plus_action:(id)sender {
+    CGFloat level = self.mapView.zoomLevel;
+    level --;
+    if (level < 3) {
+        self.mapView.zoomLevel = 3.;
+    }
+    else {
+        self.mapView.zoomLevel = level;
+    }
 }
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
 }
-    /* 实现代理方法：*/
+#pragma mark - MAMapViewDelegate
+/* 实现代理方法：*/
 - (MAAnnotationView *)mapView:(MAMapView *)mapView viewForAnnotation:(id<MAAnnotation>)annotation
 {
     if ([annotation isKindOfClass:[MAPointAnnotation class]])
@@ -240,10 +335,11 @@
             //        annotationView.animatesDrop = YES;
             annotationView.draggable = YES;
             //        annotationView.rightCalloutAccessoryView  = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
-            annotationView.image = [UIImage imageNamed:@"icon_ positioning mark"];
-            annotationView.annotation.title = @"江西省南昌市振林东路陆风研发中心";
+            annotationView.image = [UIImage imageNamed:@"icon_positioning"];
+            annotationView.annotation.title = @"车辆位置";
             annotationView.annotation.subtitle = @"2016/12/25-21:52";
-            //        annotationView.imageView.contentMode = UIViewContentModeScaleAspectFit;
+
+            annotationView.imageView.contentMode = UIViewContentModeScaleAspectFit;
             return annotationView;
         }
     }
@@ -271,6 +367,56 @@
     }
     return nil;
 }
+/**
+ * @brief 标注view的accessory view(必须继承自UIControl)被点击时，触发该回调
+ * @param mapView 地图View
+ * @param view callout所属的标注view
+ * @param control 对应的control
+ */
+- (void)mapView:(MAMapView *)mapView annotationView:(MAAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control
+{
+    //
+}
+/**
+ * @brief 标注view的calloutview整体点击时，触发改回调。
+ * @param mapView 地图的view
+ * @param view calloutView所属的annotationView
+ */
+- (void)mapView:(MAMapView *)mapView didAnnotationViewCalloutTapped:(MAAnnotationView *)view
+{
+//    
+}
+/**
+ * @brief 单击地图回调，返回经纬度
+ * @param mapView 地图View
+ * @param coordinate 经纬度
+ */
+- (void)mapView:(MAMapView *)mapView didSingleTappedAtCoordinate:(CLLocationCoordinate2D)coordinate
+{
+    NSLog(@"mapView:%lf",coordinate.latitude);
+    _carCoordinate = coordinate;
+    MAPointAnnotation *a1 = [[MAPointAnnotation alloc] init];
+    a1.coordinate = coordinate;
+    a1.title = @"车辆位置";
+    [self addAnnotation:a1];
+    [self.mapView setCenterCoordinate:coordinate animated:true];
+    [self.mapView setZoomLevel:14.5];
+    //构造圆
+    _circle = [MACircle circleWithCenterCoordinate:coordinate radius:100];
+    self.slider.value = self.slider.minimumValue;
+    //在地图上添加圆
+    [self addOverlay: _circle];
+}
+
+-(void)mapView:(MAMapView *)mapView mapDidMoveByUser:(BOOL)wasUserAction
+{
+    NSLog(@"mapView:%lf",mapView.centerCoordinate.latitude);
+}
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    [self.view endEditing:true];
+}
 #pragma mark -  地理围栏
 /**
  * @brief 添加地理围栏完成后的回调，成功与失败都会调用
@@ -281,7 +427,11 @@
  */
 - (void)amapGeoFenceManager:(AMapGeoFenceManager *)manager didAddRegionForMonitoringFinished:(NSArray <AMapGeoFenceRegion *> *)regions customID:(NSString *)customID error:(NSError *)error
 {
-    NSLog(@"didAddRegionForMonitoringFinished");
+    if (error) {
+        NSLog(@"创建失败 %@",error);
+    } else {
+        NSLog(@"创建成功");
+    }
 }
 
 
@@ -294,7 +444,11 @@
  */
 - (void)amapGeoFenceManager:(AMapGeoFenceManager *)manager didGeoFencesStatusChangedForRegion:(AMapGeoFenceRegion *)region customID:(NSString *)customID error:(NSError *)error
 {
-    NSLog(@"didGeoFencesStatusChangedForRegion");
+    if (error) {
+        NSLog(@"status changed error %@",error);
+    }else{
+        NSLog(@"status changed success %@",[region description]);
+    }
 }
 
 #pragma mark -

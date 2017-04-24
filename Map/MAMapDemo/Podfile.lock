@@ -9,11 +9,15 @@ PODS:
     - AMapFoundation-NO-IDFA (~> 1.3)
   - AMapSearch-NO-IDFA (5.0.0):
     - AMapFoundation-NO-IDFA (~> 1.2)
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
 
 DEPENDENCIES:
   - AMapLocation-NO-IDFA
   - AMapNavi-NO-IDFA (~> 5.0.0)
   - AMapSearch-NO-IDFA (~> 5.0.0)
+  - SDWebImage (~> 4.0.0)
 
 SPEC CHECKSUMS:
   AMap3DMap-NO-IDFA: 0711f9634a5a41efb6ac79fc5137b681673fb6b9
@@ -21,7 +25,8 @@ SPEC CHECKSUMS:
   AMapLocation-NO-IDFA: 7df5ab4b618d96665551afb0c6426f79db72a4a6
   AMapNavi-NO-IDFA: fca8602b6afdbad14b1e5d08482c64d63a96ce7a
   AMapSearch-NO-IDFA: 8fb4e844c27031f6791d5edce16fdd2a5cfac028
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
 
-PODFILE CHECKSUM: 552ed0bec3b9657e6e56718763b74ee7aa8b2a12
+PODFILE CHECKSUM: e3a9c7b688627493a8e2174b076416afe5752085
 
 COCOAPODS: 1.0.0

@@ -15,7 +15,7 @@
 #define kTitleWidth         120
 #define kTitleHeight        20
 
-@interface CalloutView : UIView
+@interface CalloutView : UIControl
 
 @property (nonatomic, strong) UIImageView *portraitView;
 @property (nonatomic, strong) UILabel *subtitleLabel;
