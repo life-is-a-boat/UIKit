@@ -1,15 +1,12 @@
 //
 //  AppDelegate.m
-//  MAMapDemo
+//  UIProressView
 //
-//  Created by 刘兵 on 2017/4/20.
-//  Copyright © 2017年 刘兵. All rights reserved.
+//  Created by mac on 2017/4/24.
+//  Copyright © 2017年 mac. All rights reserved.
 //
 
 #import "AppDelegate.h"
-#import <MAMapKit/MAMapKit.h>
-
-#define AMapServices_APIKEY         @"c87f1e984b0ccfdf5b6c5030ac971a4e"
 
 @interface AppDelegate ()
 
@@ -20,9 +17,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [[AMapServices sharedServices] setApiKey:AMapServices_APIKEY];
     return YES;
 }
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

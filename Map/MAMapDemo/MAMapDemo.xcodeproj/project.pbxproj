@@ -120,12 +120,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C1CE005A1EA89C1700F77E58 /* Build configuration list for PBXNativeTarget "MAMapDemo" */;
 			buildPhases = (
+				8DA271649F25F1E944257BF4 /* 📦 Check Pods Manifest.lock */,
 				702BF03C571973B76CFFB552 /* [CP] Check Pods Manifest.lock */,
 				C1CE003F1EA89C1700F77E58 /* Sources */,
 				C1CE00401EA89C1700F77E58 /* Frameworks */,
 				C1CE00411EA89C1700F77E58 /* Resources */,
 				37B83985D9AEF971708A1C29 /* [CP] Embed Pods Frameworks */,
 				013ADCB203B48EF966E86127 /* [CP] Copy Pods Resources */,
+				E570044A70A92A073B2B4440 /* 📦 Embed Pods Frameworks */,
+				9DE3B29D0C94401C3794903B /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,6 +152,11 @@
 						CreatedOnToolsVersion = 8.3.1;
 						DevelopmentTeam = VR5MBMQMJ9;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -227,6 +235,51 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8DA271649F25F1E944257BF4 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9DE3B29D0C94401C3794903B /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MAMapDemo/Pods-MAMapDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E570044A70A92A073B2B4440 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MAMapDemo/Pods-MAMapDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -363,6 +416,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VR5MBMQMJ9;
 				INFOPLIST_FILE = MAMapDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lb369.MAMapDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -376,6 +430,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VR5MBMQMJ9;
 				INFOPLIST_FILE = MAMapDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lb369.MAMapDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

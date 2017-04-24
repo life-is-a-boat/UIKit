@@ -7,7 +7,12 @@
 //
 
 #import "CalloutView.h"
-
+@interface CalloutView ()
+{
+    UIImageView     *_lineImageView;
+    UIButton        *_navigation_btn;
+}
+@end
 @implementation CalloutView
 
 - (id)initWithFrame:(CGRect)frame
@@ -25,13 +30,13 @@
 {
     // 添加图片，即商户图
     self.portraitView = [[UIImageView alloc] initWithFrame:CGRectZero];
-    self.portraitView.backgroundColor = [UIColor blackColor];
+    self.portraitView.backgroundColor = [UIColor clearColor];
     self.portraitView.contentMode = UIViewContentModeScaleAspectFit;
     [self addSubview:self.portraitView];
     
     // 添加标题，即商户名
     self.titleLabel = [[UILabel alloc] initWithFrame:CGRectZero];
-    self.titleLabel.font = [UIFont boldSystemFontOfSize:13];
+    self.titleLabel.font = [UIFont boldSystemFontOfSize:12];
     self.titleLabel.textColor = [UIColor blackColor];
     self.titleLabel.text = @"titletitletitletitle";
     [self addSubview:self.titleLabel];
@@ -42,6 +47,16 @@
     self.subtitleLabel.textColor = [UIColor lightGrayColor];
     self.subtitleLabel.text = @"subtitleLabelsubtitleLabelsubtitleLabel";
     [self addSubview:self.subtitleLabel];
+
+    //线
+    _lineImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"pic_popup_loading_line"]];
+    [self addSubview:_lineImageView];
+
+    //导航图标
+    _navigation_btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    _navigation_btn.contentMode = UIViewContentModeScaleAspectFit;
+    [_navigation_btn setImage:[UIImage imageNamed:@""] forState:UIControlStateNormal];
+    [self addSubview:_navigation_btn];
 }
 - (void)setTitle:(NSString *)title
 {
@@ -61,31 +76,33 @@
     self.portraitView.image = image;
 }
 
-#define Text_badge    30.
+#define Text_badge    20.
 -(void)layoutSubviews
 {
     [super layoutSubviews];
-    CGFloat width = self.portraitView.image.size.width;
+    self.title = @"江西省南昌市振林东路陆风研发中心";
+    CGFloat width = 100.;
     CGFloat height = self.portraitView.image.size.height;
     CGFloat temp_width = 0.;
     if (self.title) {
-        temp_width = [self.title boundingRectWithSize:CGSizeMake(CGFLOAT_MAX, height) options:NSStringDrawingUsesFontLeading attributes:@{NSFontAttributeName:self.titleLabel.font} context:nil].size.width;
+        temp_width = [self.title boundingRectWithSize:CGSizeMake(CGFLOAT_MAX, height) options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading attributes:@{NSFontAttributeName:self.titleLabel.font} context:nil].size.width;
         if (temp_width > width) {
             width = temp_width;
         }
     }
     
     if (self.subtitle) {
-        temp_width = [self.subtitle boundingRectWithSize:CGSizeMake(CGFLOAT_MAX, height) options:NSStringDrawingUsesFontLeading attributes:@{NSFontAttributeName:self.subtitleLabel.font} context:nil].size.width;
+        temp_width = [self.subtitle boundingRectWithSize:CGSizeMake(CGFLOAT_MAX, height) options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading attributes:@{NSFontAttributeName:self.subtitleLabel.font} context:nil].size.width;
         if (temp_width > width) {
             width = temp_width;
         }
     }
-    self.bounds = CGRectMake(0., 0., width, height);
+    self.bounds = CGRectMake(0., 0., width + 40. + 10., height+10.);
     self.center = CGPointMake(self.center.x, - height / 2.);
-    self.portraitView.frame =CGRectMake(0., 0., width, height);
-    self.titleLabel.frame = CGRectMake(Text_badge, (height - 15. - 13.)/2., (width - Text_badge * 2), 15.);
-    self.subtitleLabel.frame = CGRectMake(Text_badge, CGRectGetMaxY(self.titleLabel.frame), (width - Text_badge * 2),13.);
+    self.portraitView.frame = self.bounds;
+    self.titleLabel.frame = CGRectMake(Text_badge, (height - 15. - 13.)/2., (width), 15.);
+    self.subtitleLabel.frame = CGRectMake(Text_badge, CGRectGetMaxY(self.titleLabel.frame), width,13.);
+    _lineImageView.frame = CGRectMake((CGRectGetMaxX(self.titleLabel.frame)>CGRectGetMaxX(self.subtitleLabel.frame) ? CGRectGetMaxX(self.titleLabel.frame) : CGRectGetMaxX(self.subtitleLabel.frame)) + 5., (height - _lineImageView.image.size.height) / 2., _lineImageView.image.size.width, _lineImageView.image.size.height);
 
 }
 

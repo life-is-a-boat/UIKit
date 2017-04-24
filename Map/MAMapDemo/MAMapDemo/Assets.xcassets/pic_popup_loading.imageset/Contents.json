@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "pic_popup_loading@3x副本.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "pic_popup_loading@2x.png",
       "scale" : "2x"
     },
     {
