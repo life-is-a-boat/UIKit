@@ -41,7 +41,13 @@
     
     [super setSelected:selected animated:animated];
 }
-    
+-(void)layoutSubviews
+{
+    [super layoutSubviews];
+    if (self.imageView.image) {
+        self.imageView.frame = CGRectMake(self.imageView.frame.origin.x, self.imageView.frame.origin.y - (self.imageView.image.size.height / 2.), self.imageView.frame.size.width, self.imageView.frame.size.height);
+    }
+}
 -(void)setLocationText:(NSString *)locationText
 {
     //

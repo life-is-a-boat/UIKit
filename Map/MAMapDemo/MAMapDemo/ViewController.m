@@ -10,14 +10,16 @@
 #import <MAMapKit/MAMapKit.h>
 #import <AMapFoundationKit/AMapFoundationKit.h>
 #import <AMapLocationKit/AMapLocationKit.h>
+#import <AMapSearchKit/AMapSearchKit.h>
 #import "AnnotationView.h"
 
 #import <SDWebImage/UIImageView+WebCache.h>
 
-@interface ViewController ()<MAMapViewDelegate,AMapGeoFenceManagerDelegate>
+@interface ViewController ()<MAMapViewDelegate,AMapGeoFenceManagerDelegate,AMapSearchDelegate>
 {
     CLLocationCoordinate2D      _carCoordinate;
     MACircle                    *_circle;
+
 }
 @property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
 @property (weak, nonatomic) IBOutlet MAMapView *mapView;
@@ -27,25 +29,10 @@
 @property (weak, nonatomic) IBOutlet UITextField *sliderValue_textField;
 @property (strong, nonatomic) IBOutlet UISlider *slider;
 @property (weak, nonatomic) IBOutlet UIImageView *bgImageView;
+@property (strong, nonatomic) AMapSearchAPI *search;
 @end
 
 @implementation ViewController
-- (IBAction)slider_action:(id)sender {
-//    printf("\n slider value:%lf",self.slider.value);
-    self.sliderValue_textField.text = [NSString stringWithFormat:@"%.1lf",self.slider.value * 50.];
-
-    MAPointAnnotation *a1 = [[MAPointAnnotation alloc] init];
-    a1.coordinate = _carCoordinate;
-    a1.title = @"车辆位置";
-    [self addAnnotation:a1];
-//    [self.mapView setCenterCoordinate:_carCoordinate animated:true];
-//    [self.mapView setZoomLevel:14.5];
-    _circle.radius = self.slider.value * 50.;
-    //构造圆
-//    MACircle *circle = [MACircle circleWithCenterCoordinate:_carCoordinate radius:self.slider.value * 50.];
-//    //在地图上添加圆
-//    [self addOverlay: circle];
-}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -56,6 +43,11 @@
 //    [self.bgImageView sd_setImageWithURL:url completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
 //        //
 //    }];
+
+    self.search = [[AMapSearchAPI alloc] init];
+    self.search.delegate = self;
+    CLLocationCoordinate2D coordinate = CLLocationCoordinate2DMake(31.1759441828, 121.4654445648);
+    [self reGeocodeSearch:coordinate withResult:nil];
 
     self.slider.minimumValue = 0.002;
     self.slider.maximumValue = 1.;
@@ -216,11 +208,34 @@
 //    [self.mapView setZoomLevel:14.5];
 
 //    1、初始化地理围栏管理manager
-    self.geoFenceManager = [[AMapGeoFenceManager alloc] init];
-    self.geoFenceManager.delegate = self;
-    self.geoFenceManager.activeAction = AMapGeoFenceActiveActionInside | AMapGeoFenceActiveActionOutside | AMapGeoFenceActiveActionStayed; //设置希望侦测的围栏触发行为，默认是侦测用户进入围栏的行为，即AMapGeoFenceActiveActionInside，这边设置为进入，离开，停留（在围栏内10分钟以上），都触发回调
-    self.geoFenceManager.allowsBackgroundLocationUpdates = YES;  //允许后台定位
+//    self.geoFenceManager = [[AMapGeoFenceManager alloc] init];
+//    self.geoFenceManager.delegate = self;
+//    self.geoFenceManager.activeAction = AMapGeoFenceActiveActionInside | AMapGeoFenceActiveActionOutside | AMapGeoFenceActiveActionStayed; //设置希望侦测的围栏触发行为，默认是侦测用户进入围栏的行为，即AMapGeoFenceActiveActionInside，这边设置为进入，离开，停留（在围栏内10分钟以上），都触发回调
+//    self.geoFenceManager.allowsBackgroundLocationUpdates = YES;  //允许后台定位
+
 }
+
+- (IBAction)slider_action:(id)sender {
+    //    printf("\n slider value:%lf",self.slider.value);
+    self.sliderValue_textField.text = [NSString stringWithFormat:@"%.1lf",self.slider.value * 50.];
+
+    //    MAPointAnnotation *a1 = [[MAPointAnnotation alloc] init];
+    //    a1.coordinate = _carCoordinate;
+    //    a1.title = @"车辆位置";
+    //    [self addAnnotation:a1];
+    ////    [self.mapView setCenterCoordinate:_carCoordinate animated:true];
+    ////    [self.mapView setZoomLevel:14.5];
+    //    _circle.radius = self.slider.value * 50.;
+    if ([_circle setCircleWithCenterCoordinate:_carCoordinate radius:self.slider.value * 50. * 1000]) {
+        printf("\n slider value:%lf",self.slider.value);
+    }
+
+    //构造圆
+    //    MACircle *circle = [MACircle circleWithCenterCoordinate:_carCoordinate radius:self.slider.value * 50.];
+    //    //在地图上添加圆
+    //    [self.mapView addOverlay: circle];
+}
+
 - (IBAction)user_location_action:(id)sender {
 //    CLLocationCoordinate2D coordinate = CLLocationCoordinate2DMake(39.908692, 116.397477); //天安门
 //    [self.mapView setCenterCoordinate:coordinate animated:true];
@@ -235,13 +250,20 @@
     CLLocationCoordinate2D coordinate = CLLocationCoordinate2DMake(31.1759441828, 121.4654445648);
     a1.coordinate = coordinate;
     a1.title = @"车辆位置";
+    [self reGeocodeSearch:coordinate withResult:nil];
     [self addAnnotation:a1];
     [self.mapView setCenterCoordinate:coordinate animated:true];
-    [self.mapView setZoomLevel:14.5];
+    [self.mapView setZoomLevel:17.];
     //构造圆
-    MACircle *circle = [MACircle circleWithCenterCoordinate:coordinate radius:100];
-    //在地图上添加圆
-    [self addOverlay: circle];
+    if (_circle == nil) {
+        _circle = [[MACircle alloc] init];
+        //在地图上添加圆
+        [self addOverlay: _circle];
+    }
+    _carCoordinate = coordinate;
+    if ([_circle setCircleWithCenterCoordinate:_carCoordinate radius:self.slider.value * 50. * 1000]) {
+        printf("\n slider value:%lf",self.slider.value);
+    }
 }
 
 -(void)addAnnotation:(MAPointAnnotation *)pointAnnotation
@@ -253,6 +275,23 @@
         }
     }
     [self.mapView addAnnotation:pointAnnotation];
+}
+
+-(void)reGeocodeSearch:(CLLocationCoordinate2D)coordinate withResult:(void (^)(AMapReGeocode *))result
+{
+    if (result) {
+//        self.reGeocodeSearch = result;
+    }
+
+    if (coordinate.latitude > 0.1 && coordinate.longitude > 0.1) {
+        self.search = [[AMapSearchAPI alloc] init];
+        self.search.delegate = self;
+        AMapReGeocodeSearchRequest *regeo = [[AMapReGeocodeSearchRequest alloc] init];
+
+        regeo.location                    = [AMapGeoPoint locationWithLatitude:coordinate.latitude longitude:coordinate.longitude];
+        regeo.requireExtension            = YES;
+        [self.search AMapReGoecodeSearch:regeo];
+    }
 }
 
 -(void)addOverlay:(MACircle *)carCircle
@@ -300,6 +339,10 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
+}
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    [self.view endEditing:true];
 }
 #pragma mark - MAMapViewDelegate
 /* 实现代理方法：*/
@@ -354,12 +397,12 @@
 //{
 //    //
 //}
+
 - (MAOverlayRenderer *)mapView:(MAMapView *)mapView rendererForOverlay:(id <MAOverlay>)overlay
 {
     if ([overlay isKindOfClass:[MACircle class]])
     {
         MACircleRenderer *circleRenderer = [[MACircleRenderer alloc] initWithCircle:overlay];
-
         circleRenderer.lineWidth    = 2.f;
         circleRenderer.strokeColor  = [UIColor redColor];//[UIColor colorWithRed:0.6 green:0.6 blue:0.6 alpha:0.8];
         circleRenderer.fillColor    = [UIColor colorWithRed:1. green:0. blue:0. alpha:0.25];//[UIColor colorWithRed:1.0 green:0.8 blue:0.0 alpha:0.8];
@@ -401,11 +444,15 @@
     [self addAnnotation:a1];
     [self.mapView setCenterCoordinate:coordinate animated:true];
     [self.mapView setZoomLevel:14.5];
+
+    if ([_circle setCircleWithCenterCoordinate:_carCoordinate radius:self.slider.value * 50. * 1000]) {
+        printf("\n slider value:%lf",self.slider.value);
+    }
     //构造圆
-    _circle = [MACircle circleWithCenterCoordinate:coordinate radius:100];
-    self.slider.value = self.slider.minimumValue;
-    //在地图上添加圆
-    [self addOverlay: _circle];
+//    _circle = [MACircle circleWithCenterCoordinate:coordinate radius:self.slider.value * 50. * 1000];
+//    self.slider.value = self.slider.minimumValue;
+//    //在地图上添加圆
+//    [self addOverlay: _circle];
 }
 
 -(void)mapView:(MAMapView *)mapView mapDidMoveByUser:(BOOL)wasUserAction
@@ -413,9 +460,22 @@
     NSLog(@"mapView:%lf",mapView.centerCoordinate.latitude);
 }
 
--(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+#pragma mark -  AMapSearchDelegate
+/* 逆地理编码回调. */
+- (void)onReGeocodeSearchDone:(AMapReGeocodeSearchRequest *)request response:(AMapReGeocodeSearchResponse *)response
 {
-    [self.view endEditing:true];
+    if (response.regeocode != nil)
+    {
+//        self.reGeocodeSearch(response.regeocode);
+    }
+    else /* from drag search, update address */
+    {
+//        self.reGeocodeSearch(nil);
+    }
+}
+- (void)AMapSearchRequest:(id)request didFailWithError:(NSError *)error
+{
+    NSLog(@"Error: %@", error);
 }
 #pragma mark -  地理围栏
 /**
