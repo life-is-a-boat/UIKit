@@ -23,9 +23,14 @@
 #import "LBProgressView.h"
 
 #import "UIWavesAnimationView.h"
+#import "LBDoubleWaveView.h"
 
-@interface ViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
+#import "TYWaveProgressView.h"
 
+@interface ViewController ()
+{
+    LBDoubleWaveView * label;
+}
 @end
 
 @implementation ViewController
@@ -92,12 +97,47 @@
 //    proView.backgroundColor = [UIColor brownColor];
 //    [self.view addSubview:proView];
 
-    UIWavesAnimationView *proView = [[UIWavesAnimationView alloc] init];
-    proView.center = CGPointMake(self.view.bounds.size.width/2, self.view.bounds.size.height/2);
-    proView.bounds = CGRectMake(0, 0, 200, 200);
-    proView.backgroundColor = [UIColor brownColor];
-    [self.view addSubview:proView];
-    [proView setUp];
+//    UIWavesAnimationView *proView = [[UIWavesAnimationView alloc] init];
+////    proView.center = CGPointMake(self.view.bounds.size.width/2, self.view.bounds.size.height/2);
+//    proView.frame = CGRectMake((self.view.bounds.size.width - 200)/2., 64, 200, 200);
+//    proView.backgroundColor = [UIColor clearColor];
+//    [self.view addSubview:proView];
+//    [proView setUp];
+
+//    label = [[LBDoubleWaveView alloc]initWithFrame:CGRectMake((self.view.bounds.size.width - 180.)/2., 93., 180., 180.)];
+//    label.present = 0.5;
+//    [self.view addSubview:label];
+
+//    UIShapeView *shapeView = [[UIShapeView alloc] initShapeViewWithFrame:CGRectMake( (self.view.bounds.size.width - 180.) / 2., 93., 180, 180) withStyle:UIShapeViewStyleCircle];
+//    shapeView.backgroundColor = [UIColor redColor];
+////    shapeView.center = CGPointMake(self.view.bounds.size.width/2, 160.);
+////    shapeView.bounds = CGRectMake(0., 0., 200, 200);
+//    [self.view addSubview:shapeView];
+
+
+    [self addWaveProgressView1];
+
+}
+- (IBAction)change:(id)sender {
+    label.present = 0.9;
+}
+
+- (void)addWaveProgressView1
+{
+    TYWaveProgressView *waveProgressView = [[TYWaveProgressView alloc]initWithFrame:CGRectMake( (self.view.bounds.size.width - 180.) / 2., 93., 180, 180)];
+    waveProgressView.waveViewMargin = UIEdgeInsetsMake(15, 15, 20, 20);
+    waveProgressView.numberLabel.text = @"80";
+    waveProgressView.numberLabel.font = [UIFont boldSystemFontOfSize:70];
+    waveProgressView.numberLabel.textColor = [UIColor whiteColor];
+    waveProgressView.unitLabel.text = @"%";
+    waveProgressView.unitLabel.font = [UIFont boldSystemFontOfSize:20];
+    waveProgressView.unitLabel.textColor = [UIColor whiteColor];
+    waveProgressView.explainLabel.text = @"电量";
+    waveProgressView.explainLabel.font = [UIFont systemFontOfSize:20];
+    waveProgressView.explainLabel.textColor = [UIColor whiteColor];
+    waveProgressView.percent = 0.76;
+    [self.view addSubview:waveProgressView];
+    [waveProgressView startWave];
 }
 
 

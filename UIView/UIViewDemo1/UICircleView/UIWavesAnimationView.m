@@ -52,18 +52,18 @@
         //设置闭环的颜色
         _firstWaveLayer.fillColor = _firstWaveColor.CGColor;
         //设置边缘线的颜色
-        //        _firstWaveLayer.strokeColor = [UIColor blueColor].CGColor;
-        //        //设置边缘线的宽度
-        //        _firstWaveLayer.lineWidth = 4.0;
-        //        _firstWaveLayer.strokeStart = 0.0;
-        //        _firstWaveLayer.strokeEnd = 0.8;
+                _firstWaveLayer.strokeColor = [UIColor blueColor].CGColor;
+                //设置边缘线的宽度
+                _firstWaveLayer.lineWidth = 4.0;
+                _firstWaveLayer.strokeStart = 0.0;
+                _firstWaveLayer.strokeEnd = 0.8;
         [self.layer addSublayer:_firstWaveLayer];
     }
     if (self.secondWaveLayer == nil) {
         //初始化
         self.secondWaveLayer = [CAShapeLayer layer];
         //设置闭环的颜色
-        self.secondWaveLayer.fillColor = _firstWaveColor.CGColor;
+        self.secondWaveLayer.fillColor = [UIColor greenColor].CGColor;//_firstWaveColor.CGColor;
         //设置边缘线的颜色
         //        _firstWaveLayer.strokeColor = [UIColor blueColor].CGColor;
         //        //设置边缘线的宽度
@@ -163,12 +163,22 @@
     [_waveDisplaylink invalidate];
 }
 
-/*
- // Only override drawRect: if you perform custom drawing.
- // An empty implementation adversely affects performance during animation.
  - (void)drawRect:(CGRect)rect {
  // Drawing code
+     //创建背景圆环
+     CAShapeLayer *trackLayer = [CAShapeLayer layer];
+     trackLayer.frame = self.bounds;
+     //清空填充色
+     trackLayer.fillColor = [UIColor clearColor].CGColor;
+     //设置画笔颜色 即圆环背景色
+     trackLayer.strokeColor =  [UIColor colorWithRed:170/255.0 green:210/255.0 blue:254/255.0 alpha:1].CGColor;
+     trackLayer.lineWidth = 20;
+     //设置画笔路径
+     UIBezierPath *path = [UIBezierPath bezierPathWithArcCenter:CGPointMake(self.frame.size.width/2.0, self.frame.size.height/2.0) radius:self.frame.size.width/2.0 - 10 startAngle:- M_PI_2 endAngle:-M_PI_2 + M_PI * 2 clockwise:YES];
+     //path 决定layer将被渲染成何种形状
+     trackLayer.path = path.CGPath;
+     self.layer.mask = trackLayer;
+//     [self.layer addSublayer:trackLayer];
  }
- */
 
 @end

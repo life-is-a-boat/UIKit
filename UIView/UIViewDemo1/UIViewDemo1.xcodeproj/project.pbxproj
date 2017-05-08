@@ -31,6 +31,8 @@
 		BE1587A61E88F6EA0072FFB6 /* UICircleView.h in Headers */ = {isa = PBXBuildFile; fileRef = BE1587961E88F6EA0072FFB6 /* UICircleView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BE1587A91E88F6EA0072FFB6 /* UICircleView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1587941E88F6EA0072FFB6 /* UICircleView.framework */; };
 		BE1587AA1E88F6EA0072FFB6 /* UICircleView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BE1587941E88F6EA0072FFB6 /* UICircleView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BE48D61B1EC0560800CA54D3 /* LBDoubleWaveView.h in Headers */ = {isa = PBXBuildFile; fileRef = BE48D6191EC0560800CA54D3 /* LBDoubleWaveView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE48D61C1EC0560800CA54D3 /* LBDoubleWaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE48D61A1EC0560800CA54D3 /* LBDoubleWaveView.m */; };
 		BE510AFA1EA706EF00451804 /* UIShapeView.h in Headers */ = {isa = PBXBuildFile; fileRef = BE510AF81EA706EF00451804 /* UIShapeView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BE510AFB1EA706EF00451804 /* UIShapeView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE510AF91EA706EF00451804 /* UIShapeView.m */; };
 		BE61FCB71EA7563B0000201E /* LBProgressView.h in Headers */ = {isa = PBXBuildFile; fileRef = BE61FCB51EA7563B0000201E /* LBProgressView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -40,6 +42,8 @@
 		BE61FCC31EA759E90000201E /* fb_wave.png in Resources */ = {isa = PBXBuildFile; fileRef = BE61FCC21EA759E90000201E /* fb_wave.png */; };
 		BE61FCC61EA75A880000201E /* UIWavesAnimationView.h in Headers */ = {isa = PBXBuildFile; fileRef = BE61FCC41EA75A880000201E /* UIWavesAnimationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BE61FCC71EA75A880000201E /* UIWavesAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE61FCC51EA75A880000201E /* UIWavesAnimationView.m */; };
+		BE6316011EC072440080052E /* TYWaterWaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6315FE1EC072440080052E /* TYWaterWaveView.m */; };
+		BE6316021EC072440080052E /* TYWaveProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6316001EC072440080052E /* TYWaveProgressView.m */; };
 		BE87B8351E8A53FC003E5B2B /* UIRotationView.h in Headers */ = {isa = PBXBuildFile; fileRef = BE87B8331E8A53FC003E5B2B /* UIRotationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BE87B8361E8A53FC003E5B2B /* UIRotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE87B8341E8A53FC003E5B2B /* UIRotationView.m */; };
 		BE87B8391E8A5D33003E5B2B /* UIOneTapGestrueRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = BE87B8371E8A5D33003E5B2B /* UIOneTapGestrueRecognizer.h */; };
@@ -138,6 +142,8 @@
 		BE15879C1E88F6EA0072FFB6 /* UICircleViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UICircleViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE1587A31E88F6EA0072FFB6 /* UICircleViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UICircleViewTests.m; sourceTree = "<group>"; };
 		BE1587A51E88F6EA0072FFB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE48D6191EC0560800CA54D3 /* LBDoubleWaveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBDoubleWaveView.h; sourceTree = "<group>"; };
+		BE48D61A1EC0560800CA54D3 /* LBDoubleWaveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBDoubleWaveView.m; sourceTree = "<group>"; };
 		BE510AF81EA706EF00451804 /* UIShapeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIShapeView.h; sourceTree = "<group>"; };
 		BE510AF91EA706EF00451804 /* UIShapeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIShapeView.m; sourceTree = "<group>"; };
 		BE61FCB51EA7563B0000201E /* LBProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBProgressView.h; sourceTree = "<group>"; };
@@ -148,6 +154,10 @@
 		BE61FCC21EA759E90000201E /* fb_wave.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fb_wave.png; sourceTree = "<group>"; };
 		BE61FCC41EA75A880000201E /* UIWavesAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIWavesAnimationView.h; sourceTree = "<group>"; };
 		BE61FCC51EA75A880000201E /* UIWavesAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIWavesAnimationView.m; sourceTree = "<group>"; };
+		BE6315FD1EC072440080052E /* TYWaterWaveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYWaterWaveView.h; sourceTree = "<group>"; };
+		BE6315FE1EC072440080052E /* TYWaterWaveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYWaterWaveView.m; sourceTree = "<group>"; };
+		BE6315FF1EC072440080052E /* TYWaveProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYWaveProgressView.h; sourceTree = "<group>"; };
+		BE6316001EC072440080052E /* TYWaveProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYWaveProgressView.m; sourceTree = "<group>"; };
 		BE87B8331E8A53FC003E5B2B /* UIRotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIRotationView.h; sourceTree = "<group>"; };
 		BE87B8341E8A53FC003E5B2B /* UIRotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIRotationView.m; sourceTree = "<group>"; };
 		BE87B8371E8A5D33003E5B2B /* UIOneTapGestrueRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIOneTapGestrueRecognizer.h; sourceTree = "<group>"; };
@@ -232,6 +242,7 @@
 			children = (
 				BE15875F1E88F6BB0072FFB6 /* AppDelegate.h */,
 				BE1587601E88F6BB0072FFB6 /* AppDelegate.m */,
+				BE6315FC1EC072440080052E /* TYWaveProgressView */,
 				BE1587621E88F6BB0072FFB6 /* ViewController.h */,
 				BE1587631E88F6BB0072FFB6 /* ViewController.m */,
 				BECA3D2B1E8CA7E000EBAD81 /* UICircleFlowLayout.h */,
@@ -307,6 +318,8 @@
 				BE61FCB61EA7563B0000201E /* LBProgressView.m */,
 				BE61FCC41EA75A880000201E /* UIWavesAnimationView.h */,
 				BE61FCC51EA75A880000201E /* UIWavesAnimationView.m */,
+				BE48D6191EC0560800CA54D3 /* LBDoubleWaveView.h */,
+				BE48D61A1EC0560800CA54D3 /* LBDoubleWaveView.m */,
 			);
 			path = UICircleView;
 			sourceTree = "<group>";
@@ -320,6 +333,17 @@
 			path = UICircleViewTests;
 			sourceTree = "<group>";
 		};
+		BE6315FC1EC072440080052E /* TYWaveProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				BE6315FD1EC072440080052E /* TYWaterWaveView.h */,
+				BE6315FE1EC072440080052E /* TYWaterWaveView.m */,
+				BE6315FF1EC072440080052E /* TYWaveProgressView.h */,
+				BE6316001EC072440080052E /* TYWaveProgressView.m */,
+			);
+			path = TYWaveProgressView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -327,6 +351,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE48D61B1EC0560800CA54D3 /* LBDoubleWaveView.h in Headers */,
 				BE61FCC61EA75A880000201E /* UIWavesAnimationView.h in Headers */,
 				BE61FCB71EA7563B0000201E /* LBProgressView.h in Headers */,
 				BE510AFA1EA706EF00451804 /* UIShapeView.h in Headers */,
@@ -548,9 +573,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE6316011EC072440080052E /* TYWaterWaveView.m in Sources */,
 				BECA3D2D1E8CA7E000EBAD81 /* UICircleFlowLayout.m in Sources */,
 				BE1587641E88F6BB0072FFB6 /* ViewController.m in Sources */,
 				BE1587611E88F6BB0072FFB6 /* AppDelegate.m in Sources */,
+				BE6316021EC072440080052E /* TYWaveProgressView.m in Sources */,
 				BECA3D2A1E8CA1B100EBAD81 /* UICircleCollectionViewLayout.m in Sources */,
 				BE15875E1E88F6BB0072FFB6 /* main.m in Sources */,
 			);
@@ -578,6 +605,7 @@
 			files = (
 				BE0402F71E890464008FB728 /* UIMulti-colorView.m in Sources */,
 				BECBC2721E8BCA9E00EAC03B /* UIImage+MaskImage.m in Sources */,
+				BE48D61C1EC0560800CA54D3 /* LBDoubleWaveView.m in Sources */,
 				BE510AFB1EA706EF00451804 /* UIShapeView.m in Sources */,
 				BE0402EB1E88F9C1008FB728 /* UICoronaView.m in Sources */,
 				BE87B8361E8A53FC003E5B2B /* UIRotationView.m in Sources */,

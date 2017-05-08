@@ -28,7 +28,7 @@
 {
     if (self = [super initWithFrame:frame]) {
         self.frame = frame;
-        self.shapeLayer.frame = self.bounds;
+        self.shapeLayer.frame = CGRectMake(0., 0., self.frame.size.width, self.frame.size.height);
         _style = style;
     }
     return self;
@@ -41,16 +41,16 @@
     }
     return _shapeLayer;
 }
--(void)layoutSubviews
+
+-(void)drawRect:(CGRect)rect
 {
-    [super layoutSubviews];
     switch (_style) {
         case UIShapeViewStyleNone:
             //
             break;
         case UIShapeViewStyleCircle:
         {
-            _shapeLayer.frame = self.bounds;
+            self.shapeLayer.frame = CGRectMake(0., 0., self.frame.size.width, self.frame.size.height);
             _shapeLayer.lineWidth = 8;
             _shapeLayer.fillColor = nil;
             _shapeLayer.strokeColor = [UIColor whiteColor].CGColor;
@@ -58,7 +58,8 @@
             _shapeLayer.lineJoin = kCALineCapRound;
             UIBezierPath *path = [UIBezierPath bezierPathWithArcCenter:CGPointMake(self.center.x , self.center.y) radius:(self.bounds.size.width - 8)/2 startAngle:0 endAngle:M_PI*2 clockwise:YES];
             _shapeLayer.path = path.CGPath;
-            [self.layer addSublayer:_shapeLayer];
+            self.layer.mask = _shapeLayer;
+//            [self.layer addSublayer:_shapeLayer];
         }
             break;
 
@@ -66,12 +67,5 @@
             break;
     }
 }
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
 
 @end
