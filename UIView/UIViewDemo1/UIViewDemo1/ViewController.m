@@ -114,7 +114,6 @@
 ////    shapeView.bounds = CGRectMake(0., 0., 200, 200);
 //    [self.view addSubview:shapeView];
 
-
     [self addWaveProgressView1];
 
 }
@@ -124,7 +123,8 @@
 
 - (void)addWaveProgressView1
 {
-    TYWaveProgressView *waveProgressView = [[TYWaveProgressView alloc]initWithFrame:CGRectMake( (self.view.bounds.size.width - 180.) / 2., 93., 180, 180)];
+    CGFloat width_height = [UIImage imageNamed:@"100%_b"].size.width;
+    TYWaveProgressView *waveProgressView = [[TYWaveProgressView alloc]initWithFrame:CGRectMake( (self.view.bounds.size.width - width_height) / 2., 93., width_height, width_height)];
     waveProgressView.waveViewMargin = UIEdgeInsetsMake(15, 15, 20, 20);
     waveProgressView.numberLabel.text = @"80";
     waveProgressView.numberLabel.font = [UIFont boldSystemFontOfSize:70];

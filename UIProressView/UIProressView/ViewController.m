@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "UIProgessView.h"
 
 @interface ViewController ()
+
+@property (weak, nonatomic) IBOutlet UISlider *slider;
 
 @end
 
@@ -17,6 +20,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+//    UISlider *progressView = [[UISlider alloc] init];
+//    progressView.center = self.view.center;
+//    progressView.bounds = CGRectMake(0., 0., 300., 45.);
+    self.slider.minimumValue = 0.;
+    self.slider.maximumValue = 100.;
 }
 
 

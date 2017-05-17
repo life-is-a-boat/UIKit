@@ -35,11 +35,16 @@
                                     <action selector="change:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kY9-Hc-ECu"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="100%_b" translatesAutoresizingMaskIntoConstraints="NO" id="a6e-Do-bnx">
+                                <rect key="frame" x="67.5" y="97" width="185" height="193"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="fbu-fR-HHd" secondAttribute="bottom" id="HVI-au-6tQ"/>
                             <constraint firstAttribute="trailing" secondItem="fbu-fR-HHd" secondAttribute="trailing" id="JKc-MK-QVC"/>
+                            <constraint firstItem="a6e-Do-bnx" firstAttribute="centerY" secondItem="teb-8L-CB3" secondAttribute="centerY" constant="10" id="Ozl-sw-pBz"/>
+                            <constraint firstItem="a6e-Do-bnx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Tn9-tt-1tl"/>
                             <constraint firstItem="teb-8L-CB3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="U42-Z1-Ww3"/>
                             <constraint firstItem="teb-8L-CB3" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="csj-C4-Ugf"/>
                             <constraint firstItem="fbu-fR-HHd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pry-6c-sRQ"/>
@@ -53,6 +58,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="100%_b" width="185" height="193"/>
         <image name="diagnose_bg" width="320" height="634"/>
         <image name="pic_progress bar_base" width="317" height="327"/>
     </resources>

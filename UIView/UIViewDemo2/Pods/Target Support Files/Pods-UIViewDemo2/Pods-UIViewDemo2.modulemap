@@ -1,0 +1,6 @@
+framework module Pods_UIViewDemo2 {
+  umbrella header "Pods-UIViewDemo2-umbrella.h"
+
+  export *
+  module * { export * }
+}

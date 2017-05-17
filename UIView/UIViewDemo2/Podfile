@@ -1,0 +1,16 @@
+use_frameworks!
+
+workspace 'UIViewDemo2.xcworkspace'
+
+project 'UIViewDemo2.xcodeproj'
+project 'UIViewDemoTarget1.xcodeproj'
+
+platform:ios,'8.0'
+
+target 'UIViewDemo2' do
+project 'UIViewDemo2.xcodeproj'	
+end
+
+target 'UIViewDemoTarget1' do
+project 'UIViewDemoTarget1.xcodeproj'
+end

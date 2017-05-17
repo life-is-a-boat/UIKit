@@ -19,7 +19,6 @@
 {
     CLLocationCoordinate2D      _carCoordinate;
     MACircle                    *_circle;
-
 }
 @property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
 @property (weak, nonatomic) IBOutlet MAMapView *mapView;
@@ -493,7 +492,6 @@
         NSLog(@"创建成功");
     }
 }
-
 
 /**
  * @brief 地理围栏状态改变时回调，当围栏状态的值发生改变，定位失败都会调用
