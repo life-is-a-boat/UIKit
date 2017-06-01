@@ -17,3 +17,4 @@ FOUNDATION_EXPORT const unsigned char UIViewDemoTarget1VersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <UIViewDemoTarget1/PublicHeader.h>
 
 
+#import <UIViewDemoTarget1/LBBrokenLineView.h>

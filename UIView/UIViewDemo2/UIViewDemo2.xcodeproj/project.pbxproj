@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		35A2151E9C459857655BD06A /* Pods_UIViewDemo2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65AB1580EE943E2E6B01B56E /* Pods_UIViewDemo2.framework */; };
+		BE3F81701EDFFC450023F05E /* UIViewDemoTarget1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEFC79BD1ECC1FC300E3FA10 /* UIViewDemoTarget1.framework */; };
+		BE3F81731EDFFCB30023F05E /* UIHistogramView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE3F81721EDFFCB30023F05E /* UIHistogramView.m */; };
+		BE3F81761EE018AF0023F05E /* UIGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE3F81751EE018AF0023F05E /* UIGradientView.m */; };
+		BE3F81791EE027200023F05E /* UIBarGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE3F81781EE027200023F05E /* UIBarGraphView.m */; };
+		BE3F817C1EE02B560023F05E /* UILineChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE3F817B1EE02B560023F05E /* UILineChartView.m */; };
 		BEFC798E1ECC1AAE00E3FA10 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFC798D1ECC1AAE00E3FA10 /* main.m */; };
 		BEFC79911ECC1AAE00E3FA10 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFC79901ECC1AAE00E3FA10 /* AppDelegate.m */; };
 		BEFC79941ECC1AAE00E3FA10 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFC79931ECC1AAE00E3FA10 /* ViewController.m */; };
@@ -24,18 +29,19 @@
 			remoteGlobalIDString = BEFC79AD1ECC1AD100E3FA10;
 			remoteInfo = UIViewDemoTarget1;
 		};
-		BEFC79BF1ECC1FE200E3FA10 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BEFC79B81ECC1FC300E3FA10 /* UIViewDemoTarget1.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = BEFC79AC1ECC1AD100E3FA10;
-			remoteInfo = UIViewDemoTarget1;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1E12518D18C28BAD02EBAEC5 /* Pods-UIViewDemo2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIViewDemo2.release.xcconfig"; path = "Pods/Target Support Files/Pods-UIViewDemo2/Pods-UIViewDemo2.release.xcconfig"; sourceTree = "<group>"; };
 		65AB1580EE943E2E6B01B56E /* Pods_UIViewDemo2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIViewDemo2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE3F81711EDFFCB30023F05E /* UIHistogramView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIHistogramView.h; sourceTree = "<group>"; };
+		BE3F81721EDFFCB30023F05E /* UIHistogramView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIHistogramView.m; sourceTree = "<group>"; };
+		BE3F81741EE018AF0023F05E /* UIGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIGradientView.h; sourceTree = "<group>"; };
+		BE3F81751EE018AF0023F05E /* UIGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIGradientView.m; sourceTree = "<group>"; };
+		BE3F81771EE027200023F05E /* UIBarGraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBarGraphView.h; sourceTree = "<group>"; };
+		BE3F81781EE027200023F05E /* UIBarGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBarGraphView.m; sourceTree = "<group>"; };
+		BE3F817A1EE02B560023F05E /* UILineChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILineChartView.h; sourceTree = "<group>"; };
+		BE3F817B1EE02B560023F05E /* UILineChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UILineChartView.m; sourceTree = "<group>"; };
 		BEFC79891ECC1AAE00E3FA10 /* UIViewDemo2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIViewDemo2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEFC798D1ECC1AAE00E3FA10 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BEFC798F1ECC1AAE00E3FA10 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -55,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE3F81701EDFFC450023F05E /* UIViewDemoTarget1.framework in Frameworks */,
 				35A2151E9C459857655BD06A /* Pods_UIViewDemo2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -105,6 +112,14 @@
 				BEFC79901ECC1AAE00E3FA10 /* AppDelegate.m */,
 				BEFC79921ECC1AAE00E3FA10 /* ViewController.h */,
 				BEFC79931ECC1AAE00E3FA10 /* ViewController.m */,
+				BE3F81711EDFFCB30023F05E /* UIHistogramView.h */,
+				BE3F81721EDFFCB30023F05E /* UIHistogramView.m */,
+				BE3F817A1EE02B560023F05E /* UILineChartView.h */,
+				BE3F817B1EE02B560023F05E /* UILineChartView.m */,
+				BE3F81771EE027200023F05E /* UIBarGraphView.h */,
+				BE3F81781EE027200023F05E /* UIBarGraphView.m */,
+				BE3F81741EE018AF0023F05E /* UIGradientView.h */,
+				BE3F81751EE018AF0023F05E /* UIGradientView.m */,
 				BEFC79951ECC1AAE00E3FA10 /* Main.storyboard */,
 				BEFC79981ECC1AAE00E3FA10 /* Assets.xcassets */,
 				BEFC799A1ECC1AAE00E3FA10 /* LaunchScreen.storyboard */,
@@ -147,7 +162,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				BEFC79C01ECC1FE200E3FA10 /* PBXTargetDependency */,
 			);
 			name = UIViewDemo2;
 			productName = UIViewDemo2;
@@ -271,20 +285,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEFC79941ECC1AAE00E3FA10 /* ViewController.m in Sources */,
+				BE3F81791EE027200023F05E /* UIBarGraphView.m in Sources */,
+				BE3F817C1EE02B560023F05E /* UILineChartView.m in Sources */,
 				BEFC79911ECC1AAE00E3FA10 /* AppDelegate.m in Sources */,
+				BE3F81761EE018AF0023F05E /* UIGradientView.m in Sources */,
 				BEFC798E1ECC1AAE00E3FA10 /* main.m in Sources */,
+				BE3F81731EDFFCB30023F05E /* UIHistogramView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		BEFC79C01ECC1FE200E3FA10 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = UIViewDemoTarget1;
-			targetProxy = BEFC79BF1ECC1FE200E3FA10 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		BEFC79951ECC1AAE00E3FA10 /* Main.storyboard */ = {

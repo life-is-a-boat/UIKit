@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "UIHistogramView.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIHistogramView *brokenLineView;
 
 @end
 
@@ -17,6 +19,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+
+    self.brokenLineView.frame = CGRectMake(15., 44., self.view.bounds.size.width - 30., 225.);
+    self.brokenLineView.backgroundColor = [UIColor brownColor];
+    [self.brokenLineView YearHistogramView];
 }
 
 
