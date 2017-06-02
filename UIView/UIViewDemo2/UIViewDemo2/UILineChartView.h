@@ -10,4 +10,7 @@
 
 @interface UILineChartView : UIView
 
+-(void)createLineChartView:(NSArray *)datas;
+-(void)monthLineChartView;
+
 @end

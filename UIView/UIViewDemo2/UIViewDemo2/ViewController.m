@@ -8,9 +8,12 @@
 
 #import "ViewController.h"
 #import "UIHistogramView.h"
+#import "UILineChartView.h"
 
 @interface ViewController ()
+
 @property (weak, nonatomic) IBOutlet UIHistogramView *brokenLineView;
+@property (weak, nonatomic) IBOutlet UILineChartView *lineChartView;
 
 @end
 
@@ -23,6 +26,11 @@
     self.brokenLineView.frame = CGRectMake(15., 44., self.view.bounds.size.width - 30., 225.);
     self.brokenLineView.backgroundColor = [UIColor brownColor];
     [self.brokenLineView YearHistogramView];
+
+
+    self.lineChartView.frame = CGRectMake(0, CGRectGetMaxY(self.brokenLineView.frame) + 30., self.view.bounds.size.width - 0., 225.);
+    [self.lineChartView createLineChartView:@[@1,@2,@5]];
+    self.lineChartView.backgroundColor = [UIColor cyanColor];
 }
 
 

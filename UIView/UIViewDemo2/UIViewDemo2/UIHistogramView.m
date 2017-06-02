@@ -30,9 +30,13 @@
     for (int i = 0; i < 12; i ++) {
         UIBarGraphView *gradientView = [[UIBarGraphView alloc] init];
         gradientView.backgroundColor = [UIColor clearColor];
-        gradientView.frame = CGRectMake([self configuXViewFrame:i withTotal:12].origin.x, 20., width, self.bounds.size.height - bounceBottom + 5. - 20.);
-        [gradientView createGradientViewWithColors:@[[UIColor blueColor],[UIColor greenColor]] withLocations:@[@0.7,@1.0] withDirection:UICollectionViewScrollDirectionVertical];
-        [gradientView setTitle:@"70"];
+        gradientView.frame = CGRectMake([self configuXViewFrame:i withTotal:12].origin.x, 20., width, self.bounds.size.height - bounceBottom - 20.);
+        [gradientView createGradientViewWithColors:@[[UIColor colorWithRed:101/255. green:209/255. blue:1. alpha:1],[UIColor colorWithRed:70/255. green:30/255. blue:250/255. alpha:1]] withLocations:@[@0.1,@1] withDirection:UICollectionViewScrollDirectionVertical];
+        [gradientView setTitle:@"90"];
+        gradientView.layer.shadowOpacity = 1.;
+        gradientView.layer.shadowColor = [UIColor blackColor].CGColor;
+        gradientView.layer.shadowOffset = CGSizeMake(0., 5.);
+//        gradientView.layer.shadowRadius = 5.;
         [self addSubview:gradientView];
     }
 }

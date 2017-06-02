@@ -27,8 +27,15 @@
 {
     UIGradientView *gradientView = [[UIGradientView alloc] init];
     gradientView.frame = CGRectMake(self.bounds.size.width / 3., 20., self.bounds.size.width / 3., self.bounds.size.height - 20.);
+
     gradientView.layer.masksToBounds = true;
     gradientView.layer.cornerRadius = 5.;
+
+//    gradientView.layer.shadowOffset = CGSizeMake(0, 15.);
+//    gradientView.layer.shadowRadius = 10.;
+//    gradientView.layer.shadowColor = [UIColor redColor].CGColor;
+//    gradientView.layer.shadowOpacity = 1.;
+
     [gradientView createGradientViewWithColors:colors withLocations:location withDirection:direction];
     [self addSubview:gradientView];
 }
